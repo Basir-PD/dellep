@@ -16,11 +16,11 @@ export const Footer = () => {
   const legal = [
     {
       name: "Privacy Policy",
-      href: "#",
+      href: "/privacy-policy",
     },
     {
-      name: "Terms of Service",
-      href: "#",
+      name: "Terms and Conditions",
+      href: "/terms-and-conditions",
     },
     {
       name: "Refund Policy",
