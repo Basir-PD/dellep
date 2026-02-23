@@ -41,33 +41,28 @@ export const Hero = () => {
   return (
     <div
       ref={containerRef}
-      className="flex flex-col min-h-[60rem] md:min-h-[80rem] pt-20 md:pt-40 relative overflow-hidden"
+      className="flex flex-col min-h-[40rem] md:min-h-[80rem] pt-24 md:pt-40 relative overflow-hidden"
     >
       <Container className="flex  flex-col items-center justify-center">
         <Heading
           as="h1"
-          className="text-3xl md:text-5xl lg:text-7xl font-bold max-w-5xl mx-auto text-center mt-6 relative z-10 py-6 tracking-tight"
+          className="text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-bold max-w-5xl mx-auto text-center mt-6 relative z-10 py-4 md:py-6 tracking-tight leading-tight"
         >
           10-20+ New Patients Every Month Or You Don&apos;t Pay
         </Heading>
-        <Subheading className="text-center mt-2 md:mt-6 text-base md:text-xl text-neutral-500 dark:text-neutral-400 max-w-3xl mx-auto relative z-10">
+        <Subheading className="text-center mt-2 md:mt-6 text-sm sm:text-base md:text-xl text-neutral-500 dark:text-neutral-400 max-w-3xl mx-auto relative z-10 px-2">
           We build done-for-you patient acquisition systems for functional
           medicine practices. No retainers. No guesswork. Just patients
           on your calendar.
         </Subheading>
-        <FeaturedImages
-          textClassName="lg:text-left text-center"
-          className="lg:justify-start justify-center items-center"
-          showStars
-        />
-        <div className="flex items-center gap-4 justify-center my-10 relative z-10">
-          <Button className="flex space-x-2 items-center group !text-lg">
+        <div className="flex items-center gap-4 justify-center my-6 md:my-10 relative z-10">
+          <Button className="flex space-x-2 items-center group !text-base md:!text-lg">
             <span>Book a free strategy call</span>{" "}
             <HiArrowRight className="text-black group-hover:translate-x-1 stroke-[1px] h-3 w-3 mt-0.5 transition-transform duration-200" />
           </Button>
         </div>
       </Container>
-      <div className="flex  items-center justify-center relative p-2 md:p-20 pb-40 md:pb-72 cursor-pointer md:-mt-20">
+      <div className="flex items-center justify-center relative px-3 py-2 md:p-20 pb-20 md:pb-72 cursor-pointer md:-mt-20">
         <div
           className="w-full relative"
           style={{
@@ -110,7 +105,7 @@ export const Card = ({
         boxShadow:
           "0 0 #0000004d, 0 9px 20px #0000004a, 0 37px 37px #00000042, 0 84px 50px #00000026, 0 149px 60px #0000000a, 0 233px 65px #00000003",
       }}
-      className="max-w-6xl z-40 group -mt-12 mx-auto isolate group h-[20rem] md:h-[50rem] w-full border-4 border-neutral-200 dark:border-neutral-900 p-2 md:p-2 bg-white dark:bg-charcoal rounded-[30px] shadow-2xl relative overflow-hidden"
+      className="max-w-6xl z-40 group -mt-12 mx-auto isolate group h-[16rem] sm:h-[20rem] md:h-[50rem] w-full border-2 md:border-4 border-neutral-200 dark:border-neutral-900 p-1 md:p-2 bg-white dark:bg-charcoal rounded-xl md:rounded-[30px] shadow-2xl relative overflow-hidden"
     >
       <Beam showBeam className="-top-1 block" />
       <VideoModal />

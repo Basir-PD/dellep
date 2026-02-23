@@ -34,68 +34,40 @@ export const MobileNavbar = ({ navItems }: any) => {
       )}
     >
       <Logo />
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-3">
         <ThemeToggle />
         <IoIosMenu
-          className="text-neutral-900 dark:text-white h-6 w-6"
+          className="text-neutral-900 dark:text-white h-6 w-6 cursor-pointer"
           onClick={() => setOpen(!open)}
         />
       </div>
       {open && (
-        <div className="fixed inset-0 bg-white dark:bg-black z-50 flex flex-col items-start justify-start space-y-10 pt-5 text-xl text-zinc-600 transition duration-200 hover:text-zinc-800">
-          <div className="flex items-center justify-between w-full px-5">
+        <div className="fixed inset-0 bg-white dark:bg-black z-50 flex flex-col pt-safe">
+          <div className="flex items-center justify-between w-full px-4 py-3 border-b border-neutral-200 dark:border-neutral-800">
             <Logo />
-            <div className="flex items-center space-x-2">
-              <IoIosClose
-                className="h-8 w-8 text-neutral-900 dark:text-white"
-                onClick={() => setOpen(!open)}
-              />
-            </div>
+            <IoIosClose
+              className="h-8 w-8 text-neutral-900 dark:text-white cursor-pointer"
+              onClick={() => setOpen(false)}
+            />
           </div>
-          <div className="flex flex-col items-start justify-start gap-[14px] px-8">
+          <div className="flex flex-col gap-2 px-4 pt-8">
             {navItems.map((navItem: any, idx: number) => (
-              <>
-                {navItem.children && navItem.children.length > 0 ? (
-                  <>
-                    {navItem.children.map((childNavItem: any, idx: number) => (
-                      <Link
-                        key={`link=${idx}`}
-                        href={childNavItem.link}
-                        onClick={() => setOpen(false)}
-                        className="relative max-w-[15rem] text-left text-2xl"
-                      >
-                        <span className="block text-neutral-900 dark:text-white">
-                          {childNavItem.title}
-                        </span>
-                      </Link>
-                    ))}
-                  </>
-                ) : (
-                  <Link
-                    key={`link=${idx}`}
-                    href={navItem.link}
-                    onClick={() => setOpen(false)}
-                    className="relative"
-                  >
-                    <span className="block text-[26px] text-neutral-900 dark:text-white">
-                      {navItem.title}
-                    </span>
-                  </Link>
-                )}
-              </>
+              <Link
+                key={`link-${idx}`}
+                href={navItem.link}
+                onClick={() => setOpen(false)}
+                className="block py-3 px-2 text-lg font-medium text-neutral-900 dark:text-white border-b border-neutral-100 dark:border-neutral-800"
+              >
+                {navItem.title}
+              </Link>
             ))}
           </div>
-          <div className="flex flex-row w-full items-start gap-2.5  px-8 py-4 ">
-            <Button>Book a demo</Button>
+          <div className="px-4 pt-8">
             <Button
-              variant="simple"
-              as={Link}
-              href="/register"
-              onClick={() => {
-                setOpen(false);
-              }}
+              className="w-full justify-center"
+              onClick={() => setOpen(false)}
             >
-              Register
+              Book a call
             </Button>
           </div>
         </div>

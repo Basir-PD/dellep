@@ -133,10 +133,7 @@ export const Tools = () => {
       className="w-full relative h-full pt-20 md:pt-40"
     >
       <div className="px-6 max-w-4xl mx-auto text-center">
-        <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
-          <IconTool className="h-6 w-6 text-cyan-500" />
-        </FeatureIconContainer>
-        <Heading className="mt-4">Your entire patient machine</Heading>
+        <Heading>Your entire patient machine</Heading>
         <Subheading>
           Every tool you need to fill your calendar. Built, managed, and
           optimized by us. You just treat patients.

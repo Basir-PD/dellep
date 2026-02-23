@@ -43,8 +43,8 @@ export const Footer = () => {
   ];
   return (
     <div className="relative">
-      <div className="border-t border-neutral-200 dark:border-neutral-900 px-8 pt-20 pb-32 relative bg-neutral-50 dark:bg-charcoal">
-        <div className="max-w-7xl mx-auto text-sm text-neutral-500 dark:text-neutral-400 flex sm:flex-row flex-col justify-between items-start">
+      <div className="border-t border-neutral-200 dark:border-neutral-900 px-4 md:px-8 pt-12 md:pt-20 pb-20 md:pb-32 relative bg-neutral-50 dark:bg-charcoal">
+        <div className="max-w-7xl mx-auto text-sm text-neutral-500 dark:text-neutral-400 flex sm:flex-row flex-col justify-between items-start gap-8">
           <div>
             <div className="mr-4  md:flex mb-4">
               <Logo />
@@ -52,7 +52,7 @@ export const Footer = () => {
             <div>Copyright &copy; 2026 Dellep</div>
             <div className="mt-2">All rights reserved</div>
           </div>
-          <div className="grid grid-cols-3 gap-10 items-start mt-10 md:mt-0">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-10 items-start mt-6 sm:mt-10 md:mt-0">
             <div className="flex justify-center space-y-4 flex-col mt-4">
               {links.map((link) => (
                 <Link

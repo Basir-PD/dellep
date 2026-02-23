@@ -1,9 +1,8 @@
 import { AmbientColor } from "@/components/ambient-color";
 import { CTA } from "@/components/cta";
 import { FAQs } from "@/components/faqs";
-import { Features } from "@/components/features";
 import { Hero } from "@/components/hero";
-import { Testimonials } from "@/components/testimonials";
+import { TestimonialsCarousel } from "@/components/testimonials-carousel";
 import { Tools } from "@/components/tools";
 
 export default function Home() {
@@ -13,7 +12,7 @@ export default function Home() {
       <Hero />
       {/* <Features /> */}
       <Tools />
-      <Testimonials />
+      <TestimonialsCarousel />
       <FAQs />
       <CTA />
     </div>

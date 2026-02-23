@@ -12,7 +12,7 @@ export const CTA = () => {
   return (
     <div className="relative">
       <AmbientColor />
-      <Container className="flex flex-col md:flex-row justify-between items-center w-full px-8">
+      <Container className="flex flex-col md:flex-row justify-between items-center w-full px-4 md:px-8">
         <div className="flex flex-col">
           <motion.h2 className="text-neutral-900 dark:text-white text-xl text-center md:text-left md:text-3xl font-bold mx-auto md:mx-0 max-w-xl ">
             Stop losing patients to competitors who market better than you
