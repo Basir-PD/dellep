@@ -11,8 +11,7 @@ export const Footer = () => {
 
   const pages = [
     { name: intl.formatMessage({ defaultMessage: "Contact" }), href: "/contact" },
-    { name: intl.formatMessage({ defaultMessage: "Pricing" }), href: "/pricing" },
-    { name: "Blog", href: "/blog" },
+    { name: "Blog", href: "/blog-coming-soon" },
   ];
 
   const legal = [
