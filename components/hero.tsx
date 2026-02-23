@@ -113,9 +113,7 @@ export const Card = ({
       className="max-w-6xl z-40 group -mt-12 mx-auto isolate group h-[20rem] md:h-[50rem] w-full border-4 border-neutral-200 dark:border-neutral-900 p-2 md:p-2 bg-white dark:bg-charcoal rounded-[30px] shadow-2xl relative overflow-hidden"
     >
       <Beam showBeam className="-top-1 block" />
-      <div className="absolute inset-0 z-20  bg-transparent group-hover:bg-black/0 transition-all duration-200 flex items-center justify-center">
-        <VideoModal />
-      </div>
+      <VideoModal />
       <div className=" h-full w-full  overflow-hidden rounded-2xl bg-transparent md:rounded-2xl md:p-4 ">
         {children}
       </div>

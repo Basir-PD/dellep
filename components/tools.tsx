@@ -132,7 +132,7 @@ export const Tools = () => {
       ref={ref}
       className="w-full relative h-full pt-20 md:pt-40"
     >
-      <div className="px-6">
+      <div className="px-6 max-w-4xl mx-auto text-center">
         <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
           <IconTool className="h-6 w-6 text-cyan-500" />
         </FeatureIconContainer>
