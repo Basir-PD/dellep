@@ -27,7 +27,7 @@ export const TestimonialsGrid = () => {
                   className="rounded-full"
                 />
                 <div className="flex flex-col">
-                  <QuoteDescription className="text-neutral-300">
+                  <QuoteDescription className="text-neutral-600 dark:text-neutral-300">
                     {testimonial.name}
                   </QuoteDescription>
                   <QuoteDescription className="text-neutral-400">
@@ -52,7 +52,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "p-8 rounded-xl border border-[rgba(255,255,255,0.10)] bg-[rgba(40,40,40,0.30)] shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] group",
+        "p-8 rounded-xl border border-neutral-200 dark:border-[rgba(255,255,255,0.10)] bg-neutral-50 dark:bg-[rgba(40,40,40,0.30)] shadow-sm dark:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] group",
         className
       )}
     >
@@ -69,7 +69,7 @@ export const Quote = ({
   className?: string;
 }) => {
   return (
-    <h3 className={cn("text-base font-semibold text-white py-2", className)}>
+    <h3 className={cn("text-base font-semibold text-neutral-900 dark:text-white py-2", className)}>
       {children}
     </h3>
   );
@@ -84,7 +84,7 @@ export const QuoteDescription = ({
 }) => {
   return (
     <p
-      className={cn("text-sm font-normal text-neutral-400 max-w-sm", className)}
+      className={cn("text-sm font-normal text-neutral-500 dark:text-neutral-400 max-w-sm", className)}
     >
       {children}
     </p>

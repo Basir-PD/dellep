@@ -11,12 +11,9 @@ import { IconReceiptFilled } from "@tabler/icons-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Pricing | Proactiv | Aceternity Templates",
+  title: "Pricing | Dellep",
   description:
-    "Proactiv is an all in on marketing automation platform that handles emails, tasks tracking, social media management and everything in between.",
-  openGraph: {
-    images: ["https://proactiv-aceternity.vercel.app/banner.png"],
-  },
+    "Dellep is an all in one marketing automation platform that handles emails, tasks tracking, social media management and everything in between.",
 };
 
 export default function PricingPage() {

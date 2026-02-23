@@ -56,7 +56,8 @@ export const GradientContainer = ({
         after:inset-0
         after:bg-gradient-to-b
         after:from-transparent
-        after:to-[var(--charcoal)]
+        after:to-white
+        dark:after:to-[var(--charcoal)]
         after:opacity-100
         `}
         style={{

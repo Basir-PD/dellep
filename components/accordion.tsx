@@ -11,7 +11,7 @@ const Accordion = ({ i, expanded, setExpanded, title, description }: any) => {
       <motion.div
         initial={false}
         onClick={() => setExpanded(isOpen ? false : i)}
-        className="flex flex-col p-4 cursor-pointer text-base font-bold bg-neutral-900 rounded-xl relative overflow-hidden"
+        className="flex flex-col p-4 cursor-pointer text-base font-bold bg-neutral-100 dark:bg-neutral-900 text-neutral-900 dark:text-white rounded-xl relative overflow-hidden"
       >
         {title}
         <AnimatePresence initial={false} mode="popLayout">
@@ -25,7 +25,7 @@ const Accordion = ({ i, expanded, setExpanded, title, description }: any) => {
                 collapsed: { opacity: 0, height: 0 },
               }}
               transition={{ duration: 0.2, ease: "easeOut" }}
-              className="mt-4 text-base font-normal text-neutral-400"
+              className="mt-4 text-base font-normal text-neutral-500 dark:text-neutral-400"
             >
               {description}
             </motion.p>

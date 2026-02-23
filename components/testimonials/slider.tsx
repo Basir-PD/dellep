@@ -74,7 +74,7 @@ export const TestimonialsSlider = () => {
           <div className="text-center">
             {/* Testimonial image */}
             <div className="relative h-40 [mask-image:_linear-gradient(0deg,transparent,#FFFFFF_30%,#FFFFFF)] md:[mask-image:_linear-gradient(0deg,transparent,#FFFFFF_40%,#FFFFFF)]">
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[480px] h-[480px] -z-10 pointer-events-none before:rounded-full rounded-full before:absolute before:inset-0 before:bg-gradient-to-b before:from-neutral-400/20 before:to-transparent before:to-20% after:rounded-full after:absolute after:inset-0 after:bg-neutral-900 after:m-px before:-z-20 after:-z-20">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[480px] h-[480px] -z-10 pointer-events-none before:rounded-full rounded-full before:absolute before:inset-0 before:bg-gradient-to-b before:from-neutral-400/20 before:to-transparent before:to-20% after:rounded-full after:absolute after:inset-0 after:bg-neutral-100 dark:after:bg-neutral-900 after:m-px before:-z-20 after:-z-20">
                 {testimonials.map((item, index) => (
                   <Transition
                     key={index}
@@ -115,7 +115,7 @@ export const TestimonialsSlider = () => {
                     leaveTo="opacity-0 translate-x-4"
                     beforeEnter={() => heightFix()}
                   >
-                    <div className="text-base md:text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-neutral-200/60 via-neutral-200 to-neutral-200/60">
+                    <div className="text-base md:text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-neutral-700 via-neutral-900 to-neutral-700 dark:from-neutral-200/60 dark:via-neutral-200 dark:to-neutral-200/60">
                       {item.quote}
                     </div>
                   </Transition>
@@ -127,7 +127,7 @@ export const TestimonialsSlider = () => {
               {testimonials.map((item, index) => (
                 <button
                   className={cn(
-                    `px-2 py-1 rounded-full m-1.5 text-xs border border-transparent text-neutral-300 transition duration-150 ease-in-out [background:linear-gradient(theme(colors.neutral.900),_theme(colors.neutral.900))_padding-box,_conic-gradient(theme(colors.neutral.400),_theme(colors.neutral.700)_25%,_theme(colors.neutral.700)_75%,_theme(colors.neutral.400)_100%)_border-box] relative before:absolute before:inset-0 before:bg-neutral-800/30 before:rounded-full before:pointer-events-none ${
+                    `px-2 py-1 rounded-full m-1.5 text-xs border border-transparent text-neutral-600 dark:text-neutral-300 transition duration-150 ease-in-out [background:linear-gradient(theme(colors.neutral.100),_theme(colors.neutral.100))_padding-box,_conic-gradient(theme(colors.neutral.300),_theme(colors.neutral.200)_25%,_theme(colors.neutral.200)_75%,_theme(colors.neutral.300)_100%)_border-box] dark:[background:linear-gradient(theme(colors.neutral.900),_theme(colors.neutral.900))_padding-box,_conic-gradient(theme(colors.neutral.400),_theme(colors.neutral.700)_25%,_theme(colors.neutral.700)_75%,_theme(colors.neutral.400)_100%)_border-box] relative before:absolute before:inset-0 before:bg-neutral-200/30 dark:before:bg-neutral-800/30 before:rounded-full before:pointer-events-none ${
                       active === index
                         ? "border-secondary/50"
                         : "border-transparent opacity-70"
@@ -140,11 +140,11 @@ export const TestimonialsSlider = () => {
                   }}
                 >
                   <span className="relative">
-                    <span className="text-neutral-50 font-bold">
+                    <span className="text-neutral-900 dark:text-neutral-50 font-bold">
                       {item.name}
                     </span>{" "}
                     <br className="block sm:hidden" />
-                    <span className="text-neutral-600 hidden sm:inline-block">
+                    <span className="text-neutral-400 dark:text-neutral-600 hidden sm:inline-block">
                       -
                     </span>{" "}
                     <span className="hidden sm:inline-block">

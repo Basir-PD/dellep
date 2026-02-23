@@ -26,8 +26,8 @@ export function NavBarItem({
     <Link
       href={href}
       className={cn(
-        "flex items-center justify-center  text-sm leading-[110%] px-4 py-2 rounded-md  hover:bg-neutral-800 hover:text-white/80 text-white hover:shadow-[0px_1px_0px_0px_#FFFFFF20_inset] transition duration-200",
-        (active || pathname?.includes(href)) && "bg-transparent text-white",
+        "flex items-center justify-center text-sm leading-[110%] px-4 py-2 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-800 text-neutral-700 dark:text-white hover:text-neutral-900 dark:hover:text-white/80 dark:hover:shadow-[0px_1px_0px_0px_#FFFFFF20_inset] transition duration-200",
+        (active || pathname?.includes(href)) && "bg-transparent text-neutral-900 dark:text-white",
         className
       )}
       target={target}

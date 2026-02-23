@@ -21,12 +21,7 @@ export const PricingGrid = () => {
         "Access to all tools for 14 days",
         "No credit card required",
         "Community Support",
-        <span key="access">
-          Access to{" "}
-          <CustomLink href="https://ui.aceternity.com">
-            Aceternity UI
-          </CustomLink>
-        </span>,
+        "Access to all Dellep tools",
       ],
       onClick: () => {
         console.log("clicked");
@@ -40,21 +35,12 @@ export const PricingGrid = () => {
       yearlyPrice: 100,
       features: [
         "Everything in Hobby +",
-        "Access to Proactiv AI",
+        "Access to Dellep AI",
         "Priority tools access",
-        <span key="access">
-          Support for{" "}
-          <CustomLink href="https://algochurn.com">Slack</CustomLink> and{" "}
-          <CustomLink href="https://twitter.com/mannupaaji">Twitter</CustomLink>
-        </span>,
+        "Slack and email support",
         "Priority support",
         "99.67% Uptime SLA",
-        <span key="access">
-          Access to{" "}
-          <CustomLink href="https://ui.aceternity.com/templates">
-            Aceternity UI Templates
-          </CustomLink>
-        </span>,
+        "Access to all templates",
       ],
       onClick: () => {
         console.log("clicked");
@@ -70,12 +56,7 @@ export const PricingGrid = () => {
         "Everything in Starter + ",
         "Access to our dev team",
         "Coffee with the CEO",
-        <span key="access">
-          Access to{" "}
-          <CustomLink href="https://ui.aceternity.com">
-            Aceternity UI
-          </CustomLink>
-        </span>,
+        "Access to all Dellep tools",
         "Request tools",
         "Advanced analytics",
         "Customizable dashboards",
@@ -152,7 +133,7 @@ export const PricingGrid = () => {
           </div>
         ))}
       </Container>
-      <Clients />
+      {/* <Clients /> */}
     </div>
   );
 };

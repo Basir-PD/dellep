@@ -93,15 +93,15 @@ export const FeaturedImages = ({
 
                       whiteSpace: "nowrap",
                     }}
-                    className="absolute -top-16 -left-1/2 translate-x-1/2 flex text-xs  flex-col items-center justify-center rounded-md bg-neutral-900 z-50 shadow-xl px-4 py-2"
+                    className="absolute -top-16 -left-1/2 translate-x-1/2 flex text-xs flex-col items-center justify-center rounded-md bg-white dark:bg-neutral-900 z-50 shadow-xl px-4 py-2"
                   >
                     <div className="absolute inset-x-0 z-30 w-[20%] mx-auto -bottom-px bg-gradient-to-r from-transparent via-emerald-500 to-transparent h-px " />
                     <div className="absolute inset-x-0 w-[70%] mx-auto z-30 -bottom-px bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px " />
                     <div className="flex items-center gap-2">
-                      <div className="font-bold text-white relative z-30 text-sm">
+                      <div className="font-bold text-neutral-900 dark:text-white relative z-30 text-sm">
                         {testimonial.name}
                       </div>
-                      <div className="text-neutral-300 text-xs px-1 py-0.5 rounded-sm bg-neutral-950">
+                      <div className="text-neutral-500 dark:text-neutral-300 text-xs px-1 py-0.5 rounded-sm bg-neutral-100 dark:bg-neutral-950">
                         {testimonial.designation}
                       </div>
                     </div>
@@ -150,14 +150,14 @@ export const FeaturedImages = ({
           ))}
         </div>
       </div>
-      <p
+      {/* <p
         className={twMerge(
-          "text-neutral-400 text-sm text-center ml-8 relative z-40",
+          "text-neutral-500 dark:text-neutral-400 text-sm text-center ml-8 relative z-40",
           textClassName
         )}
       >
-        Trusted by 27,000+ creators
-      </p>
+        Trusted by 100+ functional practices
+      </p> */}
     </div>
   );
 };

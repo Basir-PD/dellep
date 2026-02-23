@@ -97,7 +97,7 @@ export const ScrollContent = ({
           className=""
         >
           <div>{item.icon}</div>
-          <motion.h2 className="mt-2 font-bold text-2xl lg:text-4xl inline-block bg-clip-text text-left text-transparent bg-gradient-to-b from-white  to-white">
+          <motion.h2 className="mt-2 font-bold text-2xl lg:text-4xl inline-block bg-clip-text text-left text-transparent bg-gradient-to-b from-neutral-900 to-neutral-900 dark:from-white dark:to-white">
             {item.title}
           </motion.h2>
 
@@ -149,7 +149,7 @@ export const ScrollContentMobile = ({
       <div className="w-full">
         <motion.div className=" mb-6">
           <div>{item.icon}</div>
-          <motion.h2 className="mt-2 font-bold text-2xl lg:text-4xl inline-block bg-clip-text text-left text-transparent bg-gradient-to-b from-white  to-white">
+          <motion.h2 className="mt-2 font-bold text-2xl lg:text-4xl inline-block bg-clip-text text-left text-transparent bg-gradient-to-b from-neutral-900 to-neutral-900 dark:from-white dark:to-white">
             {item.title}
           </motion.h2>
 

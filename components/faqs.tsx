@@ -6,63 +6,63 @@ import { Heading } from "./heading";
 const questions = [
   {
     id: 1,
-    title: "What is Proactic?",
+    title: "What exactly does Dellep do?",
     description:
-      "Proactic is a social media marketing automation tool designed to help businesses streamline their social media efforts.",
+      "We build and run done-for-you patient acquisition systems for functional medicine practices. That means we handle the ads, the follow-ups, the CRM, and the booking. You just treat patients.",
   },
   {
     id: 2,
-    title: "How does Proactic work?",
+    title: "What does 'you don't pay' actually mean?",
     description:
-      "Proactic automates the process of scheduling, posting, and analyzing social media content across multiple platforms.",
+      "If we don't deliver 10-20 new patients to your practice within the agreed timeframe, you don't pay us. Simple. We take on the risk because we know our system works.",
   },
   {
     id: 3,
-    title: "Which social media platforms does Proactic support?",
+    title: "How fast will I see results?",
     description:
-      "Proactic supports popular social media platforms such as Facebook, Twitter, Instagram, LinkedIn, and more.",
+      "Most practices start seeing leads within 72 hours of campaign launch. Booked patients typically start showing up within the first 2 weeks. Full pipeline momentum usually hits by day 30.",
   },
   {
     id: 4,
-    title: "Can I schedule posts in advance with Proactic?",
+    title: "Do I need to do anything on my end?",
     description:
-      "Yes, Proactic allows you to schedule posts in advance, ensuring your content is published at the optimal times.",
+      "Almost nothing. We build everything, launch everything, and optimize everything. All you need to do is show up for your strategy call, approve the campaigns, and see the patients we send you.",
   },
   {
     id: 5,
-    title: "Does Proactic provide analytics?",
+    title: "What platforms do you run ads on?",
     description:
-      "Proactic offers detailed analytics to help you track the performance of your social media campaigns and make data-driven decisions.",
+      "Facebook, Instagram, and Google. We go where your ideal patients are already spending their time. We test, optimize, and scale what works.",
   },
   {
     id: 6,
-    title: "Is Proactic suitable for small businesses?",
+    title: "I've been burned by agencies before. How are you different?",
     description:
-      "Yes, Proactic is designed to be user-friendly and scalable, making it suitable for businesses of all sizes.",
+      "Most agencies sell you impressions and clicks. We sell you patients. You see every lead, every booked call, and every dollar spent in a real-time dashboard. Full transparency. No vanity metrics.",
   },
   {
     id: 7,
-    title: "Can I collaborate with my team on Proactic?",
+    title: "Will this work for my specific type of practice?",
     description:
-      "Proactic includes collaboration features that allow team members to work together on social media campaigns.",
+      "If you're a functional medicine, integrative health, naturopathic, or preventive care practice, yes. We've built systems specifically for this niche. Book a call and we'll tell you if we're a fit.",
   },
   {
     id: 8,
-    title: "Does Proactic offer customer support?",
+    title: "What's the investment?",
     description:
-      "Yes, Proactic provides customer support to assist you with any questions or issues you may encounter.",
+      "It depends on your market, your goals, and your capacity. We don't do cookie-cutter packages. Book a free strategy call and we'll give you a custom plan with exact numbers.",
   },
   {
     id: 9,
-    title: "Is there a free trial available for Proactic?",
+    title: "Do you require long-term contracts?",
     description:
-      "Proactic offers a free trial so you can explore its features and see how it can benefit your social media marketing efforts.",
+      "No. We don't lock you into 12-month retainers. Our clients stay because the system works, not because of a contract. We earn your business every single month.",
   },
   {
     id: 10,
-    title: "How can I get started with Proactic?",
+    title: "How do I get started?",
     description:
-      "To get started with Proactic, simply sign up on our website and follow the onboarding process to set up your account.",
+      "Book a free strategy call. We'll audit your current patient acquisition, show you exactly where you're leaving money on the table, and map out a plan to get you 10-20 new patients monthly.",
   },
 ];
 

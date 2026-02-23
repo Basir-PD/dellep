@@ -16,30 +16,30 @@ export const ContactForm = () => {
             <IconMailFilled className="h-6 w-6 text-cyan-500" />
           </FeatureIconContainer>
         </div>
-        <Heading className="text-left">Contact us</Heading>
+        <Heading className="text-left">Let&apos;s talk growth</Heading>
         <Subheading className="text-left text-neutral-400">
-          We are always looking for ways to improve our products and services.
-          Contact us and let us know how we can help you.
+          Ready to stop guessing and start growing? Reach out and we&apos;ll
+          show you exactly how we&apos;ll fill your practice with patients.
         </Subheading>
 
         <div className="text-sm mt-10">
-          <p className="text-sm text-neutral-200">Email</p>
-          <p className="text-sm text-neutral-400">contact@proactiv.ai</p>
+          <p className="text-sm text-neutral-700 dark:text-neutral-200">Email</p>
+          <p className="text-sm text-neutral-500 dark:text-neutral-400">contact@dellep.com</p>
         </div>
         <div className="text-sm mt-4">
-          <p className="text-sm text-neutral-200">Phone</p>
-          <p className="text-sm text-neutral-400">+1 (800) 123 XX21</p>
+          <p className="text-sm text-neutral-700 dark:text-neutral-200">Phone</p>
+          <p className="text-sm text-neutral-500 dark:text-neutral-400">+1 (800) 123 XX21</p>
         </div>
         <div className="text-sm mt-4">
-          <p className="text-sm text-neutral-200">Support</p>
-          <p className="text-sm text-neutral-400">support@proactiv.ai</p>
+          <p className="text-sm text-neutral-700 dark:text-neutral-200">Support</p>
+          <p className="text-sm text-neutral-500 dark:text-neutral-400">support@dellep.com</p>
         </div>
       </div>
-      <div className="flex flex-col items-start gap-4 max-w-2xl w-full mx-auto bg-gradient-to-b from-neutral-900 to-neutral-950 p-10 rounded-3xl relative overflow-hidden">
+      <div className="flex flex-col items-start gap-4 max-w-2xl w-full mx-auto bg-gradient-to-b from-neutral-100 to-neutral-50 dark:from-neutral-900 dark:to-neutral-950 p-10 rounded-3xl relative overflow-hidden">
         <Grid size={20} />
         <div className="mb-4 w-full relative z-20">
           <label
-            className="text-neutral-300 text-sm font-medium mb-2 inline-block"
+            className="text-neutral-600 dark:text-neutral-300 text-sm font-medium mb-2 inline-block"
             htmlFor="name"
           >
             Full name
@@ -47,13 +47,13 @@ export const ContactForm = () => {
           <input
             id="name"
             type="text"
-            placeholder="Manu Arora"
-            className="h-10 pl-4 w-full rounded-md text-sm bg-charcoal border border-neutral-800 text-white placeholder-neutral-500 outline-none focus:outline-none active:outline-none focus:ring-2 focus:ring-neutral-800"
+            placeholder="Dr. Jane Smith"
+            className="h-10 pl-4 w-full rounded-md text-sm bg-white dark:bg-charcoal border border-neutral-200 dark:border-neutral-800 text-neutral-900 dark:text-white placeholder-neutral-500 outline-none focus:outline-none active:outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-800"
           />
         </div>
         <div className="mb-4 w-full relative z-20">
           <label
-            className="text-neutral-300 text-sm font-medium mb-2 inline-block"
+            className="text-neutral-600 dark:text-neutral-300 text-sm font-medium mb-2 inline-block"
             htmlFor="email"
           >
             Email Address
@@ -61,27 +61,27 @@ export const ContactForm = () => {
           <input
             id="email"
             type="email"
-            placeholder="contact@aceternity.com"
-            className="h-10 pl-4 w-full rounded-md text-sm bg-charcoal border border-neutral-800 text-white placeholder-neutral-500 outline-none focus:outline-none active:outline-none focus:ring-2 focus:ring-neutral-800"
+            placeholder="doctor@yourpractice.com"
+            className="h-10 pl-4 w-full rounded-md text-sm bg-white dark:bg-charcoal border border-neutral-200 dark:border-neutral-800 text-neutral-900 dark:text-white placeholder-neutral-500 outline-none focus:outline-none active:outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-800"
           />
         </div>
         <div className="mb-4 w-full relative z-20">
           <label
-            className="text-neutral-300 text-sm font-medium mb-2 inline-block"
+            className="text-neutral-600 dark:text-neutral-300 text-sm font-medium mb-2 inline-block"
             htmlFor="company"
           >
-            Company
+            Practice Name
           </label>
           <input
             id="company"
             type="text"
-            placeholder="contact@aceternity.com"
-            className="h-10 pl-4 w-full rounded-md text-sm bg-charcoal border border-neutral-800 text-white placeholder-neutral-500 outline-none focus:outline-none active:outline-none focus:ring-2 focus:ring-neutral-800"
+            placeholder="Your Practice Name"
+            className="h-10 pl-4 w-full rounded-md text-sm bg-white dark:bg-charcoal border border-neutral-200 dark:border-neutral-800 text-neutral-900 dark:text-white placeholder-neutral-500 outline-none focus:outline-none active:outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-800"
           />
         </div>
         <div className="mb-4 w-full relative z-20">
           <label
-            className="text-neutral-300 text-sm font-medium mb-2 inline-block"
+            className="text-neutral-600 dark:text-neutral-300 text-sm font-medium mb-2 inline-block"
             htmlFor="message"
           >
             Message
@@ -90,7 +90,7 @@ export const ContactForm = () => {
             id="message"
             rows={5}
             placeholder="Type your message here"
-            className="pl-4 pt-4 w-full rounded-md text-sm bg-charcoal border border-neutral-800 text-white placeholder-neutral-500 outline-none focus:outline-none active:outline-none focus:ring-2 focus:ring-neutral-800"
+            className="pl-4 pt-4 w-full rounded-md text-sm bg-white dark:bg-charcoal border border-neutral-200 dark:border-neutral-800 text-neutral-900 dark:text-white placeholder-neutral-500 outline-none focus:outline-none active:outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-800"
           />
         </div>
         <Button variant="muted">Submit</Button>

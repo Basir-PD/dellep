@@ -1,26 +1,34 @@
 "use client";
 import React from "react";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 
 export const SkeletonFive = () => {
   return (
     <div className="p-8 overflow-hidden h-full relative flex items-start justify-center">
       <div className="flex absolute inset-0 flex-col group-hover:-translate-y-80 transition duration-200 items-center justify-center">
-        <Container>
-          <Image
-            src="/avatar.png"
-            className="h-16 w-16 rounded-md object-cover"
-            alt="avatar"
-            width="100"
-            height="100"
-          />
-        </Container>
-        <p className="mt-4 text-sm text-neutral-400 font-bold">Manu Arora</p>
+        <MetricIcon>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-8 w-8 text-cyan-500"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={1.5}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+        </MetricIcon>
+        <p className="mt-4 text-sm text-neutral-400 font-bold">
+          Cost Per Patient
+        </p>
         <div className="flex items-center gap-2 text-xs mt-4">
-          <p>Most engagements</p>
+          <p>Avg. acquisition cost</p>
           <div className="h-1 w-1 rounded-full bg-neutral-400" />
-          <p>69,420</p>
+          <p className="text-emerald-400">$47</p>
         </div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -37,20 +45,29 @@ export const SkeletonFive = () => {
         </svg>
       </div>
       <div className="flex absolute inset-0 flex-col translate-y-80 group-hover:translate-y-0 transition duration-200 items-center justify-center">
-        <Container>
-          <Image
-            src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80"
-            className="h-16 w-16 rounded-md object-cover"
-            alt="avatar"
-            width="100"
-            height="100"
-          />
-        </Container>
-        <p className="mt-4 text-sm text-neutral-400 font-bold">Tyler Durden</p>
+        <MetricIcon>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-8 w-8 text-cyan-500"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={1.5}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"
+            />
+          </svg>
+        </MetricIcon>
+        <p className="mt-4 text-sm text-neutral-400 font-bold">
+          New Patients
+        </p>
         <div className="flex items-center gap-2 text-xs mt-4">
-          <p>Most engagements</p>
+          <p>This month</p>
           <div className="h-1 w-1 rounded-full bg-neutral-400" />
-          <p>8008</p>
+          <p className="text-emerald-400">+17</p>
         </div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +87,7 @@ export const SkeletonFive = () => {
   );
 };
 
-const Container = ({
+const MetricIcon = ({
   className,
   children,
 }: {

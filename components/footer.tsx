@@ -4,14 +4,10 @@ import { Logo } from "@/components/logo";
 
 export const Footer = () => {
   const links = [
-    {
-      name: "Pricing",
-      href: "/pricing",
-    },
-    {
-      name: "Blog",
-      href: "/blog",
-    },
+    // {
+    //   name: "Blog",
+    //   href: "/blog",
+    // },
     {
       name: "Contact",
       href: "/contact",
@@ -34,26 +30,26 @@ export const Footer = () => {
   const socials = [
     {
       name: "Twitter",
-      href: "https://twitter.com/mannupaaji",
+      href: "#",
     },
     {
       name: "LinkedIn",
-      href: "https://linkedin.com/in/manuarora28",
+      href: "#",
     },
     {
-      name: "GitHub",
-      href: "https://github.com/manuarora700",
+      name: "Instagram",
+      href: "#",
     },
   ];
   return (
     <div className="relative">
-      <div className="border-t border-neutral-900 px-8 pt-20 pb-32 relative bg-primary">
-        <div className="max-w-7xl mx-auto text-sm text-neutral-500 dark:text-neutral-400 flex sm:flex-row flex-col justify-between items-start ">
+      <div className="border-t border-neutral-200 dark:border-neutral-900 px-8 pt-20 pb-32 relative bg-neutral-50 dark:bg-charcoal">
+        <div className="max-w-7xl mx-auto text-sm text-neutral-500 dark:text-neutral-400 flex sm:flex-row flex-col justify-between items-start">
           <div>
             <div className="mr-4  md:flex mb-4">
               <Logo />
             </div>
-            <div>Copyright &copy; 2024 Proactiv INC</div>
+            <div>Copyright &copy; 2026 Dellep</div>
             <div className="mt-2">All rights reserved</div>
           </div>
           <div className="grid grid-cols-3 gap-10 items-start mt-10 md:mt-0">
@@ -61,7 +57,7 @@ export const Footer = () => {
               {links.map((link) => (
                 <Link
                   key={link.name}
-                  className="transition-colors hover:text-black text-muted dark:text-muted-dark dark:hover:text-neutral-400 text-xs sm:text-sm"
+                  className="transition-colors text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-300 text-xs sm:text-sm"
                   href={link.href}
                 >
                   {link.name}
@@ -72,7 +68,7 @@ export const Footer = () => {
               {legal.map((link) => (
                 <Link
                   key={link.name}
-                  className="transition-colors hover:text-black text-muted dark:text-muted-dark dark:hover:text-neutral-400 text-xs sm:text-sm"
+                  className="transition-colors text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-300 text-xs sm:text-sm"
                   href={link.href}
                 >
                   {link.name}
@@ -83,7 +79,7 @@ export const Footer = () => {
               {socials.map((link) => (
                 <Link
                   key={link.name}
-                  className="transition-colors hover:text-black text-muted dark:text-muted-dark dark:hover:text-neutral-400 text-xs sm:text-sm"
+                  className="transition-colors text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-300 text-xs sm:text-sm"
                   href={link.href}
                 >
                   {link.name}

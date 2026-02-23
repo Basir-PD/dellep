@@ -75,7 +75,7 @@ export const MacbookScroll = ({
         <Trackpad />
         <div className="h-2 w-20 mx-auto inset-x-0 absolute bottom-0 bg-gradient-to-t from-[#272729] to-[#050505] rounded-tr-3xl rounded-tl-3xl" />
         {showGradient && (
-          <div className="h-40 w-full absolute bottom-0 inset-x-0 bg-gradient-to-t from-charcoal  via-charcoal to-transparent z-50"></div>
+          <div className="h-40 w-full absolute bottom-0 inset-x-0 bg-gradient-to-t from-white via-white dark:from-charcoal dark:via-charcoal to-transparent z-50"></div>
         )}
         {badge && <div className="absolute bottom-4 left-4">{badge}</div>}
       </div>
@@ -117,7 +117,7 @@ export const Lid = ({ src }: { src?: string }) => {
         >
           <Image
             src={src as string}
-            alt="aceternity logo"
+            alt="Dellep dashboard"
             fill
             className="object-cover object-left-top rounded-lg inset-0 h-full w-full"
           />
@@ -596,7 +596,7 @@ export const OptionKey = ({ className }: { className: string }) => {
   );
 };
 
-const AceternityLogo = () => {
+const DellepLogo = () => {
   return (
     <svg
       width="66"

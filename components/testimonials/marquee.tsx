@@ -19,7 +19,7 @@ export const TestimonialsMarquee = () => {
         </FeatureIconContainer>
         <Heading className="pt-4">Used by entreprenurs</Heading>
         <Subheading>
-          Proactiv is used by serial entrepreneurs and overachievers.
+          Dellep is used by serial entrepreneurs and overachievers.
         </Subheading>
       </div>
 

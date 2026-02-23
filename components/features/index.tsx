@@ -24,18 +24,18 @@ export const Features = () => {
         <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
           <FaBolt className="h-6 w-6 text-cyan-500" />
         </FeatureIconContainer>
-        <Heading className="pt-4">Automate your social media</Heading>
+        <Heading className="pt-4">Why most practices fail at marketing</Heading>
         <Subheading>
-          Proactiv houses a rich set of features to automate your marketing
-          efforts across all social medias
+          You didn&apos;t go to school to learn Facebook ads. We did. Here&apos;s
+          what we handle so you can focus on treating patients.
         </Subheading>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 py-10">
           <Card className="lg:col-span-2">
-            <CardTitle>Post to multiple platforms at once</CardTitle>
+            <CardTitle>Done-For-You Ad Campaigns</CardTitle>
             <CardDescription>
-              With our AI-powered platform, you can post to multiple platforms
-              at once, saving you time and effort.
+              We write, launch, and optimize your ads across Facebook, Instagram,
+              and Google. You never touch an ad manager.
             </CardDescription>
             <CardSkeletonContainer>
               <SkeletonOne />
@@ -45,19 +45,20 @@ export const Features = () => {
             <CardSkeletonContainer className="max-w-[16rem] mx-auto">
               <SkeletonTwo />
             </CardSkeletonContainer>
-            <CardTitle>Analytics for everything</CardTitle>
+            <CardTitle>Real-Time Lead Tracking</CardTitle>
             <CardDescription>
-              Check analytics, track your posts, and get insights into your
-              audience.
+              See every lead, every booked call, and every new patient in one
+              dashboard. No guessing. Just numbers.
             </CardDescription>
           </Card>
           <Card>
             <CardSkeletonContainer>
               <SkeletonThree />
             </CardSkeletonContainer>
-            <CardTitle>Integrated AI</CardTitle>
+            <CardTitle>AI-Powered Follow-Up</CardTitle>
             <CardDescription>
-              Proactiv uses AI to help you create engaging content.
+              Our systems follow up with leads via text and email within 60
+              seconds. Speed-to-lead wins the patient.
             </CardDescription>
           </Card>
           <Card>
@@ -67,19 +68,20 @@ export const Features = () => {
             >
               <SkeletonFour />
             </CardSkeletonContainer>
-            <CardTitle>Easy Collaboration</CardTitle>
+            <CardTitle>Seamless CRM Integration</CardTitle>
             <CardDescription>
-              Proactive can integrate with Zapier, Slack and every other popular
-              integration tools.
+              Plugs into your existing systems. No ripping out what works. We
+              add the layer that brings patients in.
             </CardDescription>
           </Card>
           <Card>
             <CardSkeletonContainer>
               <SkeletonFive />
             </CardSkeletonContainer>
-            <CardTitle>Know your audience</CardTitle>
+            <CardTitle>Know Exactly What&apos;s Working</CardTitle>
             <CardDescription>
-              Based on your audience, create funnels and drive more traffic.
+              Every dollar tracked. Every lead attributed. You&apos;ll know your
+              cost per patient down to the penny.
             </CardDescription>
           </Card>
         </div>

@@ -4,13 +4,11 @@
 @import "./prism.css";
 
 :root {
-  --foreground-rgb: 255, 255, 255;
+  --foreground-rgb: 0, 0, 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-  }
+.dark {
+  --foreground-rgb: 255, 255, 255;
 }
 
 body {

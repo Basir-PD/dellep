@@ -19,19 +19,20 @@ export const Testimonials = () => {
         <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
           <TbLocationBolt className="h-6 w-6 text-cyan-500" />
         </FeatureIconContainer>
-        <Heading className="pt-4">Used by entreprenurs</Heading>
+        <Heading className="pt-4">Practices that are growing</Heading>
         <Subheading>
-          Proactiv is used by serial entrepreneurs and overachievers.
+          Don&apos;t take our word for it. Hear from functional medicine
+          practitioners who filled their calendars with Dellep.
         </Subheading>
       </div>
 
       <div className="py-60 relative">
-        <div className="absolute inset-0 h-full w-full bg-charcoal opacity-30 [mask-image:radial-gradient(circle_at_center,transparent_10%,white_90%)]">
+        <div className="absolute inset-0 h-full w-full bg-white dark:bg-charcoal opacity-30 [mask-image:radial-gradient(circle_at_center,transparent_10%,white_90%)]">
           <TestimonialsGrid />
         </div>
         <TestimonialsSlider />
       </div>
-      <div className="absolute bottom-0 inset-x-0 h-40 w-full bg-gradient-to-t from-charcoal to-transparent"></div>
+      <div className="absolute bottom-0 inset-x-0 h-40 w-full bg-gradient-to-t from-white dark:from-charcoal to-transparent"></div>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 "use client";
 import { motion, useMotionValueEvent } from "motion/react";
 import React, { useRef, useState } from "react";
+import { useTheme } from "next-themes";
 import { FeatureIconContainer } from "./features/feature-icon-container";
 import { Heading } from "./heading";
 import { Subheading } from "./subheading";
@@ -15,12 +16,13 @@ import { useScroll } from "motion/react";
 import { BlurImage } from "./blur-image";
 
 export const Tools = () => {
+  const { resolvedTheme } = useTheme();
   const content = [
     {
       icon: <IconMailForward className="h-8 w-8 text-secondary" />,
-      title: "Email Automation",
+      title: "Automated Patient Outreach",
       description:
-        "With our best in class email automation, you can automate your entire emailing process.",
+        "Leads get texts, emails, and follow-ups within 60 seconds. No manual work. No missed opportunities. Just booked appointments.",
       content: (
         <ImageContainer>
           <BlurImage
@@ -35,9 +37,9 @@ export const Tools = () => {
     },
     {
       icon: <IconSocial className="h-8 w-8 text-secondary" />,
-      title: "Cross Platform Marketing",
+      title: "Multi-Channel Ad Campaigns",
       description:
-        "With our cross platform marketing, you can reach your audience on all the platforms they use.",
+        "Facebook. Instagram. Google. We run your ads everywhere your ideal patients are scrolling. You never touch an ad manager.",
       content: (
         <ImageContainer>
           <BlurImage
@@ -52,9 +54,9 @@ export const Tools = () => {
     },
     {
       icon: <IconTerminal className="h-8 w-8 text-secondary" />,
-      title: "Managed CRM",
+      title: "Done-For-You CRM",
       description:
-        "With our managed CRM, you can manage your leads and contacts in one place.",
+        "Every lead tracked. Every follow-up logged. Every patient journey mapped. One dashboard. Zero guesswork.",
       content: (
         <ImageContainer>
           <BlurImage
@@ -69,9 +71,9 @@ export const Tools = () => {
     },
     {
       icon: <IconTerminal className="h-8 w-8 text-secondary" />,
-      title: "Apps Automation",
+      title: "Full-Stack Automation",
       description:
-        "We have cloned zapier and built our very own apps automation platform.",
+        "Booking confirmations, reminders, review requests, reactivation sequences. All automated. All done for you.",
       content: (
         <ImageContainer>
           <BlurImage
@@ -90,11 +92,17 @@ export const Tools = () => {
     target: ref,
     offset: ["start end", "end start"],
   });
-  const backgrounds = [
+  const darkBackgrounds = [
     "var(--charcoal)",
     "var(--neutral-900)",
     "var(--gray-900)",
   ];
+  const lightBackgrounds = [
+    "#f1f5f9",
+    "#e2e8f0",
+    "#f1f5f9",
+  ];
+  const backgrounds = resolvedTheme === "dark" ? darkBackgrounds : lightBackgrounds;
   const index = Math.round(scrollYProgress.get() * (backgrounds.length - 1));
 
   const [gradient, setGradient] = useState(backgrounds[0]);
@@ -128,9 +136,10 @@ export const Tools = () => {
         <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
           <IconTool className="h-6 w-6 text-cyan-500" />
         </FeatureIconContainer>
-        <Heading className="mt-4">Perfect set of tools</Heading>
+        <Heading className="mt-4">Your entire patient machine</Heading>
         <Subheading>
-          Proactiv comes with perfect tools for the perfect jobs out there.
+          Every tool you need to fill your calendar. Built, managed, and
+          optimized by us. You just treat patients.
         </Subheading>
       </div>
       <StickyScroll content={content} />
@@ -140,7 +149,7 @@ export const Tools = () => {
 
 const ImageContainer = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="p-4 bg-zinc-900 border border-zinc-800 rounded-lg relative shadow-2xl">
+    <div className="p-4 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-lg relative shadow-2xl">
       {children}
       <div className="absolute bottom-0 w-full h-px inset-x-0 bg-gradient-to-r from-transparent via-secondary to-transparent" />
       <div className="absolute bottom-0 w-40 mx-auto h-px inset-x-10 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />

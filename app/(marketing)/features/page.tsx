@@ -7,12 +7,9 @@ import { Tools } from "@/components/tools";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Features | Proactiv | Aceternity Templates",
+  title: "Features | Dellep",
   description:
-    "Proactiv is an all in on marketing automation platform that handles emails, tasks tracking, social media management and everything in between.",
-  openGraph: {
-    images: ["https://proactiv-aceternity.vercel.app/banner.png"],
-  },
+    "Dellep is an all in one marketing automation platform that handles emails, tasks tracking, social media management and everything in between.",
 };
 
 export default function PricingPage() {

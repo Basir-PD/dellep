@@ -7,157 +7,87 @@ interface Testimonial {
 
 export const testimonials: Testimonial[] = [
   {
-    name: "Manu Arora",
+    name: "Dr. Sarah Mitchell",
     quote:
-      "What a fantastic AI Proactiv AI is, I just love it. It has completely transformed the way I approach problems and develop solutions.",
+      "We went from 3 new patients a month to 17 in the first 60 days. I didn't change anything in my practice. Dellep handled everything from the ads to the follow-ups. I just showed up and treated people.",
     src: "https://i.pravatar.cc/150?img=1",
-    designation: "Tech Innovator & Entrepreneur",
+    designation: "Functional Medicine Physician, Austin TX",
   },
   {
-    name: "Tyler Durden",
+    name: "Dr. James Thornton",
     quote:
-      "I made a soap with the help of AI, it was so easy to use. I'm so glad this happened because it revolutionized my entire business model and production process.",
+      "I've wasted over $40K on marketing agencies that couldn't deliver. Dellep got me 14 new patients in month one. The difference? They actually understand patient acquisition, not just pretty ads.",
     src: "https://i.pravatar.cc/150?img=2",
-    designation: "Creative Director & Business Owner",
+    designation: "Integrative Health Clinic Owner",
   },
   {
-    name: "Alice Johnson",
+    name: "Dr. Rachel Kim",
     quote:
-      "This AI has transformed the way I work! It's like having a brilliant assistant who knows exactly what I need before I even ask.",
+      "The speed-to-lead system is insane. A lead comes in and gets a text within 30 seconds. By the time I used to check my email, Dellep already had them booked on my calendar.",
     src: "https://i.pravatar.cc/150?img=3",
-    designation: "Senior Software Engineer",
+    designation: "Naturopathic Doctor, Portland OR",
   },
   {
-    name: "Bob Smith",
+    name: "Dr. Michael Chen",
     quote:
-      "Absolutely revolutionary, a game-changer for our industry. It has streamlined our processes and enhanced our productivity dramatically.",
+      "I was skeptical about the 'you don't pay' guarantee. Then they delivered 22 new patients in 90 days. My only problem now is hiring another practitioner to handle the volume.",
     src: "https://i.pravatar.cc/150?img=4",
-    designation: "Industry Analyst",
+    designation: "Functional Medicine Practice Owner",
   },
   {
-    name: "Cathy Lee",
+    name: "Dr. Amanda Brooks",
     quote:
-      "I can't imagine going back to how things were before this AI. It has not only improved my work efficiency but also my daily life.",
+      "Before Dellep, I was doing my own Facebook ads and getting $200 per lead. They got my cost per booked patient down to $47. The ROI is not even close to anything I've tried before.",
     src: "https://i.pravatar.cc/150?img=5",
-    designation: "Product Manager",
+    designation: "Preventive Health Specialist",
   },
   {
-    name: "David Wright",
+    name: "Dr. David Reyes",
     quote:
-      "It's like having a superpower! This AI tool has given us the ability to do things we never thought were possible in our field.",
+      "What sold me was the dashboard. I can see exactly how many leads came in, how many booked, and what my cost per patient is. No other agency ever gave me that kind of transparency.",
     src: "https://i.pravatar.cc/150?img=6",
-    designation: "Research Scientist",
+    designation: "Holistic Health Practitioner",
   },
   {
-    name: "Eva Green",
+    name: "Dr. Lisa Patel",
     quote:
-      "The efficiency it brings is unmatched. It's a vital tool that has helped us cut costs and improve our end product significantly.",
+      "I opened my second location and needed to fill it fast. Dellep had 11 new patients on the books within the first 3 weeks. They made scaling feel easy.",
     src: "https://i.pravatar.cc/150?img=7",
-    designation: "Operations Director",
+    designation: "Multi-Location Practice Owner",
   },
   {
-    name: "Frank Moore",
+    name: "Dr. Robert Hayes",
     quote:
-      "A robust solution that fits perfectly into our workflow. It has enhanced our team's capabilities and allowed us to tackle more complex projects.",
+      "The AI follow-up system is what sets them apart. Leads that would have gone cold are now showing up to appointments. My no-show rate dropped by 60%.",
     src: "https://i.pravatar.cc/150?img=8",
-    designation: "Project Manager",
+    designation: "Functional Wellness Center Director",
   },
   {
-    name: "Grace Hall",
+    name: "Dr. Jennifer Walsh",
     quote:
-      "It's incredibly intuitive and easy to use. Even those without technical expertise can leverage its power to improve their workflows.",
+      "I finally stopped trading time for patients. The system runs whether I'm in the office or on vacation. Last month I was in Costa Rica and 9 new patients booked themselves in.",
     src: "https://i.pravatar.cc/150?img=9",
-    designation: "Marketing Specialist",
+    designation: "Anti-Aging & Preventive Medicine",
   },
   {
-    name: "Henry Ford",
+    name: "Dr. Mark Sullivan",
     quote:
-      "It has saved us countless hours. Highly recommended for anyone looking to enhance their efficiency and productivity.",
+      "Every dollar is tracked. Every lead is attributed. I know my exact cost per patient down to the penny. That level of accountability is why I'll never go back to a traditional agency.",
     src: "https://i.pravatar.cc/150?img=10",
-    designation: "Operations Analyst",
+    designation: "Integrative Medicine Physician",
   },
   {
-    name: "Ivy Wilson",
+    name: "Dr. Karen Nguyen",
     quote:
-      "A must-have tool for any professional. It's revolutionized the way we approach problem-solving and decision-making.",
+      "We were spending $5K/month on SEO with zero idea if it was working. Switched to Dellep, spent less, and got 13 new patients in 30 days. The math doesn't lie.",
     src: "https://i.pravatar.cc/150?img=11",
-    designation: "Business Consultant",
+    designation: "Functional Nutrition Practice Owner",
   },
   {
-    name: "Jack Brown",
+    name: "Dr. Thomas Grant",
     quote:
-      "The results are always impressive. This AI has helped us to not only meet but exceed our performance targets.",
+      "The onboarding was seamless. They plugged into our existing systems, built the campaigns, and we started seeing leads within 72 hours. No other team has moved that fast for us.",
     src: "https://i.pravatar.cc/150?img=12",
-    designation: "Performance Manager",
-  },
-  {
-    name: "Kathy Adams",
-    quote:
-      "It helps us achieve what was once thought impossible. The AI's capabilities are groundbreaking and have opened new avenues for us.",
-    src: "https://i.pravatar.cc/150?img=13",
-    designation: "Innovation Lead",
-  },
-  {
-    name: "Leo Carter",
-    quote:
-      "Transformative technology with real impact. It has streamlined our operations and brought unprecedented efficiency to our processes.",
-    src: "https://i.pravatar.cc/150?img=14",
-    designation: "Technology Strategist",
-  },
-  {
-    name: "Mia Turner",
-    quote:
-      "It's simply revolutionary! The way it integrates with our existing systems and enhances them is nothing short of miraculous.",
-    src: "https://i.pravatar.cc/150?img=15",
-    designation: "Systems Integrator",
-  },
-  {
-    name: "Nathan Hill",
-    quote:
-      "The best investment we've made in years. It's not just a tool; it's a game-changer that has propelled our business forward.",
-    src: "https://i.pravatar.cc/150?img=16",
-    designation: "Investment Analyst",
-  },
-  {
-    name: "Olivia Scott",
-    quote:
-      "It consistently exceeds our expectations. Its adaptability and precision make it indispensable for our daily operations.",
-    src: "https://i.pravatar.cc/150?img=17",
-    designation: "Quality Assurance Manager",
-  },
-  {
-    name: "Peter White",
-    quote:
-      "A seamless integration into our daily tasks. It has enhanced our productivity and allowed us to focus on more strategic initiatives.",
-    src: "https://i.pravatar.cc/150?img=18",
-    designation: "Strategic Planner",
-  },
-  {
-    name: "Quinn Taylor",
-    quote:
-      "It's a game-changer for our business. The insights it provides are invaluable and have driven substantial growth for us.",
-    src: "https://i.pravatar.cc/150?img=19",
-    designation: "Growth Manager",
-  },
-  {
-    name: "Rachel Black",
-    quote:
-      "The support team is as impressive as the technology itself. They ensure we maximize the utility of the AI in our operations.",
-    src: "https://i.pravatar.cc/150?img=20",
-    designation: "Client Support Coordinator",
-  },
-  {
-    name: "Samuel Lee",
-    quote:
-      "It's the future, now. Adopting this AI has put us years ahead of the competition in terms of operational efficiency and innovation.",
-    src: "https://i.pravatar.cc/150?img=21",
-    designation: "Futurist",
-  },
-  {
-    name: "Tina Brooks",
-    quote:
-      "It has completely changed the way we operate. The AI's ability to analyze and optimize our processes is phenomenal.",
-    src: "https://i.pravatar.cc/150?img=22",
-    designation: "Process Analyst",
+    designation: "Preventive Care Clinic Director",
   },
 ];
