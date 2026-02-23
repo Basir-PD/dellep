@@ -13,7 +13,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Pricing | Dellep",
   description:
-    "Dellep is an all in one marketing automation platform that handles emails, tasks tracking, social media management and everything in between.",
+    "Transparent pricing for functional and naturopathic practitioners. Done-for-you patient acquisition systems that pay for themselves.",
 };
 
 export default function PricingPage() {
@@ -25,11 +25,11 @@ export default function PricingPage() {
           <IconReceiptFilled className="h-6 w-6 text-cyan-500" />
         </FeatureIconContainer>
         <Heading as="h1" className="mt-4">
-          Simple pricing
+          Simple, transparent pricing
         </Heading>
         <Subheading>
-          Simple pricing for startups, small businesses, medium scale businesses
-          and enterprises.
+          Plans built for solo practitioners, growing clinics, and multi-location
+          practices. Pick what fits your stage.
         </Subheading>
         <PricingGrid />
       </div>

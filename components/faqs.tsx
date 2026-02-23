@@ -8,7 +8,7 @@ const questions = [
     id: 1,
     title: "What exactly does Dellep do?",
     description:
-      "We build and run done-for-you patient acquisition systems for functional medicine practices. That means we handle the ads, the follow-ups, the CRM, and the booking. You just treat patients.",
+      "We build and run done-for-you patient acquisition systems for functional and naturopathic practitioners. That means we handle the ads, the follow-ups, the CRM, and the booking. You just treat patients.",
   },
   {
     id: 2,
@@ -42,9 +42,9 @@ const questions = [
   },
   {
     id: 7,
-    title: "Will this work for my specific type of practice?",
+    title: "Will this work for my type of practice?",
     description:
-      "If you're a functional medicine, integrative health, naturopathic, or preventive care practice, yes. We've built systems specifically for this niche. Book a call and we'll tell you if we're a fit.",
+      "If you're a functional medicine practitioner, naturopathic doctor, integrative health provider, or preventive care specialist — yes. We've built systems specifically for this space. Book a call and we'll tell you if we're a fit.",
   },
   {
     id: 8,

@@ -13,8 +13,8 @@ import { Clients } from "./clients";
 export const PricingGrid = () => {
   const tiers = [
     {
-      title: "Hobby",
-      description: "For individuals trying out the product",
+      title: "Starter",
+      description: "For solo practitioners exploring growth",
       monthlyPrice: 0,
       yearlyPrice: 0,
       features: [
@@ -29,8 +29,8 @@ export const PricingGrid = () => {
       ctaText: "Get Started",
     },
     {
-      title: "Starter",
-      description: "For serious founders",
+      title: "Growth",
+      description: "For practitioners ready to scale",
       monthlyPrice: 20,
       yearlyPrice: 100,
       features: [
@@ -49,7 +49,7 @@ export const PricingGrid = () => {
     },
     {
       title: "Pro",
-      description: "For small to large businesses",
+      description: "For established clinics & multi-provider practices",
       monthlyPrice: 30,
       yearlyPrice: 150,
       features: [
@@ -72,7 +72,7 @@ export const PricingGrid = () => {
     },
     {
       title: "Enterprise",
-      description: "For large scale businesses",
+      description: "For multi-location practices & clinic networks",
       monthlyPrice: 0,
       yearlyPrice: 0,
       features: [

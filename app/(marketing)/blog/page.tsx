@@ -14,7 +14,7 @@ import { format } from "date-fns";
 export const metadata: Metadata = {
   title: "Blog | Dellep",
   description:
-    "Insights and strategies for functional medicine practices looking to grow their patient base with proven marketing systems.",
+    "Insights and strategies for functional and naturopathic practitioners looking to grow their patient base with proven marketing systems.",
 };
 
 export default async function ArticlesIndex() {

@@ -15,10 +15,10 @@ export const CTA = () => {
       <Container className="flex flex-col md:flex-row justify-between items-center w-full px-4 md:px-8">
         <div className="flex flex-col">
           <motion.h2 className="text-neutral-900 dark:text-white text-xl text-center md:text-left md:text-3xl font-bold mx-auto md:mx-0 max-w-xl ">
-            Stop losing patients to competitors who market better than you
+            Stop losing patients to practitioners who market better than you
           </motion.h2>
           <p className="max-w-md mt-8 text-center md:text-left text-sm md:text-base mx-auto md:mx-0 text-neutral-500 dark:text-neutral-400">
-            Your clinical skills are world-class. Your patient flow
+            Your healing skills are world-class. Your patient flow
             shouldn&apos;t be a gamble. Book a free strategy call and see
             exactly how we&apos;ll fill your calendar.
           </p>

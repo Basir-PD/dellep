@@ -24,10 +24,10 @@ export const Features = () => {
         <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
           <FaBolt className="h-6 w-6 text-cyan-500" />
         </FeatureIconContainer>
-        <Heading className="pt-4">Why most practices fail at marketing</Heading>
+        <Heading className="pt-4">Why most practitioners struggle with marketing</Heading>
         <Subheading>
-          You didn&apos;t go to school to learn Facebook ads. We did. Here&apos;s
-          what we handle so you can focus on treating patients.
+          You trained to heal people, not run Facebook ads. We did. Here&apos;s
+          what we handle so you can focus on your patients.
         </Subheading>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 py-10">

@@ -30,7 +30,7 @@ export function TestimonialsCarousel() {
         </p>
         <div className="mt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <h2 className="text-xl sm:text-2xl font-medium tracking-tight text-black md:text-4xl lg:text-5xl dark:text-white leading-tight">
-            Practices that are growing.
+            Practitioners who are growing.
           </h2>
           <div className="flex items-center gap-2 shrink-0">
             <button

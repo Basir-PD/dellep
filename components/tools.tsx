@@ -133,10 +133,10 @@ export const Tools = () => {
       className="w-full relative h-full pt-20 md:pt-40"
     >
       <div className="px-6 max-w-4xl mx-auto text-center">
-        <Heading>Your entire patient machine</Heading>
+        <Heading>Your entire patient acquisition engine</Heading>
         <Subheading>
-          Every tool you need to fill your calendar. Built, managed, and
-          optimized by us. You just treat patients.
+          Every tool a functional or naturopathic practitioner needs to fill
+          their calendar. Built, managed, and optimized by us.
         </Subheading>
       </div>
       <StickyScroll content={content} />

@@ -52,8 +52,8 @@ export const Hero = () => {
         </Heading>
         <Subheading className="text-center mt-2 md:mt-6 text-sm sm:text-base md:text-xl text-neutral-500 dark:text-neutral-400 max-w-3xl mx-auto relative z-10 px-2">
           We build done-for-you patient acquisition systems for functional
-          medicine practices. No retainers. No guesswork. Just patients
-          on your calendar.
+          and naturopathic practitioners. No retainers. No guesswork. Just
+          patients on your calendar.
         </Subheading>
         <div className="flex items-center gap-4 justify-center my-6 md:my-10 relative z-10">
           <Button className="flex space-x-2 items-center group !text-base md:!text-lg">

@@ -9,9 +9,9 @@ import { Footer } from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
-  title: "Dellep | 10-20 New Patients Monthly for Functional Practices",
+  title: "Dellep | 10-20 New Patients Monthly for Functional & Naturopathic Practices",
   description:
-    "We help functional medicine practices get 10-20 new patients every month using done-for-you marketing systems. If we don't deliver, you don't pay.",
+    "We help functional and naturopathic practitioners get 10-20 new patients every month using done-for-you marketing systems. If we don't deliver, you don't pay.",
 };
 
 export const viewport: Viewport = {
