@@ -40,7 +40,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <Container className="py-40 md:py-60 grid grid-cols-1 md:grid-cols-2 gap-10 px-6">
+    <Container className="py-40 md:py-60 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 px-6">
       <div>
         <div className="flex">
           <FeatureIconContainer className="flex justify-center items-center overflow-hidden">

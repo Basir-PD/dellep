@@ -132,7 +132,7 @@ export const Tools = () => {
       ref={ref}
       className="w-full relative h-full pt-20 md:pt-40"
     >
-      <div className="px-6 max-w-4xl mx-auto text-center">
+      <div className="px-4 md:px-6 max-w-4xl mx-auto text-center">
         <Heading>Your entire patient acquisition engine</Heading>
         <Subheading>
           Every tool a functional or naturopathic practitioner needs to fill

@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
+import { IconUserCircle } from "@tabler/icons-react";
 import { testimonials } from "@/constants/page-testimonials";
 
 export function TestimonialsCarousel() {
@@ -105,14 +106,7 @@ export function TestimonialsCarousel() {
                   &ldquo;{testimonial.quote}&rdquo;
                 </p>
                 <div className="mt-6 md:mt-14 flex items-center gap-3">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={testimonial.src}
-                    alt={testimonial.name}
-                    width={40}
-                    height={40}
-                    className="size-8 shrink-0 rounded-full object-cover"
-                  />
+                  <IconUserCircle className="size-8 shrink-0 text-neutral-400 dark:text-neutral-500" />
                   <div className="flex flex-col">
                     <span className="text-sm font-medium text-black dark:text-white">
                       {testimonial.name}

@@ -1,7 +1,7 @@
 "use client";
 import { testimonials } from "@/constants/page-testimonials";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
+import { IconUserCircle } from "@tabler/icons-react";
 import React from "react";
 import Marquee from "react-fast-marquee";
 import { AmbientColor } from "../ambient-color";
@@ -31,13 +31,7 @@ export const TestimonialsMarquee = () => {
             <Card key={`testimonial-${testimonial.src}-${index}`}>
               <Quote>{testimonial.quote}</Quote>
               <div className="flex gap-2 items-center mt-8">
-                <Image
-                  src={testimonial.src}
-                  alt="Manu Arora"
-                  width={40}
-                  height={40}
-                  className="rounded-full"
-                />
+                <IconUserCircle className="h-10 w-10 text-neutral-400 shrink-0" />
                 <div className="flex flex-col">
                   <QuoteDescription className="text-neutral-300">
                     {testimonial.name}
@@ -60,13 +54,7 @@ export const TestimonialsMarquee = () => {
             <Card key={`testimonial-${testimonial.src}-${index}`}>
               <Quote>{testimonial.quote}</Quote>
               <div className="flex gap-2 items-center mt-8">
-                <Image
-                  src={testimonial.src}
-                  alt="Manu Arora"
-                  width={40}
-                  height={40}
-                  className="rounded-full"
-                />
+                <IconUserCircle className="h-10 w-10 text-neutral-400 shrink-0" />
                 <div className="flex flex-col">
                   <QuoteDescription className="text-neutral-300">
                     {testimonial.name}

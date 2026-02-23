@@ -19,10 +19,10 @@ export const BlogCard = ({ blog }: { blog: BlogWithSlug }) => {
           alt={blog.title}
           height="800"
           width="800"
-          className="h-72 object-cover object-top w-full rounded-3xl"
+          className="h-48 md:h-72 object-cover object-top w-full rounded-3xl"
         />
       ) : (
-        <div className="h-72 flex items-center justify-center group-hover:bg-neutral-900">
+        <div className="h-48 md:h-72 flex items-center justify-center group-hover:bg-neutral-900">
           <Logo />
         </div>
       )}

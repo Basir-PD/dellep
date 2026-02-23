@@ -40,7 +40,7 @@ export function BlogLayout({
         <div className="mx-auto max-w-2xl">
           <article className="pb-8">
             <header className="flex flex-col">
-              <h1 className="mt-8 text-4xl font-bold tracking-tight text-neutral-200 sm:text-5xl ">
+              <h1 className="mt-8 text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-neutral-200 lg:text-5xl">
                 {blog.title}
               </h1>
             </header>

@@ -46,7 +46,7 @@ export const FeaturesGrid = () => {
   ];
   return (
     <div className="py-20 lg:py-40">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-10 max-w-7xl mx-auto">
         {grid.map((feature, idx) => (
           <div
             key={feature.title}

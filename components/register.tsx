@@ -20,7 +20,7 @@ export const Register = () => {
     console.log(target.value);
   };
   return (
-    <Container className="h-screen max-w-lg mx-auto flex flex-col items-center justify-center">
+    <Container className="min-h-[100dvh] max-w-lg mx-auto flex flex-col items-center justify-center">
       <Logo />
       <h1 className="text-xl md:text-4xl font-bold my-4 text-neutral-900 dark:text-white">
         Welcome to Dellep

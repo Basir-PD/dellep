@@ -26,7 +26,7 @@ export const Testimonials = () => {
         </Subheading>
       </div>
 
-      <div className="py-60 relative">
+      <div className="py-20 md:py-60 relative">
         <div className="absolute inset-0 h-full w-full bg-white dark:bg-charcoal opacity-30 [mask-image:radial-gradient(circle_at_center,transparent_10%,white_90%)]">
           <TestimonialsGrid />
         </div>

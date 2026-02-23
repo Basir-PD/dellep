@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import Image, { StaticImageData } from "next/image";
+import { IconUserCircle } from "@tabler/icons-react";
 import { Transition } from "@headlessui/react";
 import { SparklesCore } from "../ui/sparkles";
 import { testimonials as pageTestimonials } from "@/constants/page-testimonials";
@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 // import Particles from './particles'
 
 interface Item {
-  src: StaticImageData;
+  src: string;
   quote: string;
   name: string;
   designation?: string;
@@ -55,7 +55,7 @@ export const TestimonialsSlider = () => {
 
   return (
     <section>
-      <div className="max-w-3xl mx-auto  relative z-40 h-80">
+      <div className="max-w-3xl mx-auto  relative z-40 h-auto md:h-80">
         <div className="relative pb-12 md:pb-20">
           {/* Particles animation */}
           <div className="absolute left-1/2 -translate-x-1/2 -top-2 -z-10 w-80 h-20 -mt-6">
@@ -87,14 +87,8 @@ export const TestimonialsSlider = () => {
                     leaveTo="opacity-0 rotate-[60deg]"
                     beforeEnter={() => heightFix()}
                   >
-                    <div className="absolute inset-0 h-full -z-10">
-                      <Image
-                        className="relative top-11 left-1/2 -translate-x-1/2 rounded-full"
-                        src={item.src}
-                        width={56}
-                        height={56}
-                        alt={item.name}
-                      />
+                    <div className="absolute inset-0 h-full -z-10 flex justify-center">
+                      <IconUserCircle className="relative top-11 h-14 w-14 text-neutral-400 dark:text-neutral-500" />
                     </div>
                   </Transition>
                 ))}
