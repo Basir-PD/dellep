@@ -121,7 +121,7 @@ export const ContactForm = () => {
                 id="email"
                 type="email"
                 required
-                placeholder="doctor@yourpractice.com"
+                placeholder="yourname@yourpractice.com"
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
                 className="h-10 pl-4 w-full rounded-md text-sm bg-white dark:bg-charcoal border border-neutral-200 dark:border-neutral-800 text-neutral-900 dark:text-white placeholder-neutral-500 outline-none focus:outline-none active:outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-800"
