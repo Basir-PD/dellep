@@ -17,7 +17,7 @@ export default function TermsAndConditionsPage() {
             {intl.formatMessage({ defaultMessage: "Last updated: February 22, 2026" })}
           </p>
 
-          <div className="prose prose-neutral dark:prose-invert max-w-none prose-headings:font-semibold prose-h2:text-xl prose-h2:mt-10 prose-h2:mb-4 prose-h3:text-lg prose-h3:mt-6 prose-h3:mb-3 prose-p:text-neutral-600 dark:prose-p:text-neutral-400 prose-p:leading-relaxed prose-li:text-neutral-600 dark:prose-li:text-neutral-400 prose-a:text-cyan-500 prose-a:no-underline hover:prose-a:underline prose-strong:text-neutral-800 dark:prose-strong:text-neutral-200">
+          <div className="prose prose-neutral dark:prose-invert max-w-none prose-headings:font-semibold prose-h2:text-xl prose-h2:mt-10 prose-h2:mb-4 prose-h3:text-lg prose-h3:mt-6 prose-h3:mb-3 prose-p:text-neutral-600 dark:prose-p:text-neutral-400 prose-p:leading-relaxed prose-li:text-neutral-600 dark:prose-li:text-neutral-400 prose-a:text-green-500 prose-a:no-underline hover:prose-a:underline prose-strong:text-neutral-800 dark:prose-strong:text-neutral-200">
             <nav className="my-8 p-6 bg-neutral-100 dark:bg-neutral-900 rounded-xl">
               <p className="font-semibold text-neutral-900 dark:text-white !mt-0 !mb-3">
                 {intl.formatMessage({ defaultMessage: "Table of Contents" })}

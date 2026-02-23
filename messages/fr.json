@@ -1,4 +1,10 @@
 {
+  "oZlfK/": {
+    "defaultMessage": "Réserver une consultation gratuite"
+  },
+  "KmIBfp": {
+    "defaultMessage": "Appel stratégique gratuit — sans contrat, sans risque."
+  },
   "Bb6254": {
     "defaultMessage": "Arrêtez de perdre des patients au profit de concurrents qui sont arrivés en premier. Chaque jour sans système, c'est du revenu laissé sur la table."
   },
@@ -232,9 +238,6 @@
   },
   "IrEAyo": {
     "defaultMessage": "Tarification simple et transparente"
-  },
-  "J39vnV": {
-    "defaultMessage": "Réserver un appel stratégique gratuit"
   },
   "JbpCYv": {
     "defaultMessage": "SLA de disponibilité 99,67%"

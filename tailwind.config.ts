@@ -17,7 +17,7 @@ const config: Config = {
       },
       colors: {
         charcoal: "#08090A",
-        secondary: "#39C3EF",
+        secondary: "#22C55E",
         muted: "var(--neutral-200)",
       },
       boxShadow: {

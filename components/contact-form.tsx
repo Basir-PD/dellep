@@ -46,7 +46,7 @@ export const ContactForm = () => {
       <div>
         <div className="flex">
           <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
-            <IconMailFilled className="h-6 w-6 text-cyan-500" />
+            <IconMailFilled className="h-6 w-6 text-green-500" />
           </FeatureIconContainer>
         </div>
         <Heading className="text-left">

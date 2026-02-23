@@ -15,8 +15,8 @@
   height: 1px;
   background: linear-gradient(
     90deg,
-    var(--cyan-500),
-    var(--blue-500),
+    var(--green-500),
+    var(--emerald-500),
     transparent
   );
 }

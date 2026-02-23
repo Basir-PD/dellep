@@ -28,8 +28,8 @@ export const FeatureIconContainer = ({
           {children}
         </div>
         <div className="absolute bottom-0 inset-x-0 bg-neutral-600 opacity-50 rounded-full blur-lg h-4 w-full mx-auto z-30"></div>
-        <div className="absolute bottom-0 inset-x-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent h-px w-[60%] mx-auto"></div>
-        <div className="absolute bottom-0 inset-x-0 bg-gradient-to-r from-transparent via-cyan-600 blur-sm to-transparent h-[8px] w-[60%] mx-auto"></div>
+        <div className="absolute bottom-0 inset-x-0 bg-gradient-to-r from-transparent via-green-500 to-transparent h-px w-[60%] mx-auto"></div>
+        <div className="absolute bottom-0 inset-x-0 bg-gradient-to-r from-transparent via-green-600 blur-sm to-transparent h-[8px] w-[60%] mx-auto"></div>
       </div>
     </div>
   );

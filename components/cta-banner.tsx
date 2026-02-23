@@ -12,7 +12,7 @@ export const CTABanner = () => {
       <div className="max-w-3xl mx-auto text-center">
         <a
           href="/contact"
-          className="inline-block bg-secondary hover:bg-secondary/90 active:scale-[0.98] transition-all duration-200 text-black font-extrabold text-lg md:text-2xl uppercase tracking-wide px-10 py-5 md:px-14 md:py-6 rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+          className="inline-block bg-gradient-to-b from-green-500 to-green-600 hover:from-green-400 hover:to-green-500 active:scale-[0.98] transition-all duration-200 text-white font-extrabold text-lg md:text-2xl uppercase tracking-wide px-10 py-5 md:px-14 md:py-6 rounded-xl shadow-lg shadow-green-500/25 hover:shadow-xl hover:shadow-green-500/30 hover:-translate-y-0.5"
         >
           {intl.formatMessage({
             defaultMessage: "Yes! I'm ready to fill my calendar",

@@ -55,11 +55,16 @@ export const Hero = () => {
         <Subheading className="text-center mt-2 md:mt-6 text-sm sm:text-base md:text-xl text-neutral-500 dark:text-neutral-400 max-w-3xl mx-auto relative z-10 px-2">
           {intl.formatMessage({ defaultMessage: "We build done-for-you patient acquisition systems for functional and naturopathic practitioners. No retainers. No guesswork. Just patients on your calendar." })}
         </Subheading>
-        <div className="flex items-center gap-4 justify-center my-6 md:my-10 relative z-10">
-          <Button className="flex space-x-2 items-center group !text-base md:!text-lg">
-            <span>{intl.formatMessage({ defaultMessage: "Book a free strategy call" })}</span>{" "}
-            <HiArrowRight className="text-black group-hover:translate-x-1 stroke-[1px] h-3 w-3 mt-0.5 transition-transform duration-200" />
-          </Button>
+        <div className="flex flex-col items-center justify-center my-6 md:my-10 relative z-10">
+          <a
+            href="/contact"
+            className="inline-block bg-gradient-to-b from-green-500 to-green-600 hover:from-green-400 hover:to-green-500 active:scale-[0.98] transition-all duration-200 text-white font-extrabold text-base sm:text-lg md:text-2xl uppercase tracking-wide px-8 py-4 sm:px-10 sm:py-5 md:px-14 md:py-6 rounded-xl shadow-lg shadow-green-500/25 hover:shadow-xl hover:shadow-green-500/30 hover:-translate-y-0.5"
+          >
+            {intl.formatMessage({ defaultMessage: "Book a free consultation" })}
+          </a>
+          <p className="mt-2.5 text-xs md:text-sm text-neutral-400">
+            {intl.formatMessage({ defaultMessage: "Free strategy call — no contracts, no risk." })}
+          </p>
         </div>
       </Container>
       <div className="flex items-center justify-center relative px-3 py-2 md:p-20 pb-20 md:pb-72 cursor-pointer md:-mt-20">

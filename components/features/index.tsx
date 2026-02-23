@@ -22,7 +22,7 @@ export const Features = () => {
     <GradientContainer className="md:my-20">
       <Container className="py-20 max-w-5xl mx-auto  relative z-40">
         <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
-          <FaBolt className="h-6 w-6 text-cyan-500" />
+          <FaBolt className="h-6 w-6 text-green-500" />
         </FeatureIconContainer>
         <Heading className="pt-4">Why most practitioners struggle with marketing</Heading>
         <Subheading>
