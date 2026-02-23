@@ -7,10 +7,13 @@ import { IoIosClose } from "react-icons/io";
 import { Button } from "@/components/button";
 import { Logo } from "@/components/logo";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { LanguageSwitcher } from "@/components/language-switcher";
 import { useMotionValueEvent, useScroll } from "motion/react";
+import { useIntl } from "react-intl";
 
 export const MobileNavbar = ({ navItems }: any) => {
   const [open, setOpen] = useState(false);
+  const intl = useIntl();
 
   const { scrollY } = useScroll();
 
@@ -35,6 +38,7 @@ export const MobileNavbar = ({ navItems }: any) => {
     >
       <Logo />
       <div className="flex items-center gap-3">
+        <LanguageSwitcher />
         <ThemeToggle />
         <IoIosMenu
           className="text-neutral-900 dark:text-white h-6 w-6 cursor-pointer"
@@ -67,7 +71,7 @@ export const MobileNavbar = ({ navItems }: any) => {
               className="w-full justify-center"
               onClick={() => setOpen(false)}
             >
-              Book a call
+              {intl.formatMessage({ defaultMessage: "Book a call" })}
             </Button>
           </div>
         </div>

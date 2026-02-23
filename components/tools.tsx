@@ -14,15 +14,16 @@ import {
 } from "@tabler/icons-react";
 import { useScroll } from "motion/react";
 import { BlurImage } from "./blur-image";
+import { useIntl } from "react-intl";
 
 export const Tools = () => {
   const { resolvedTheme } = useTheme();
+  const intl = useIntl();
   const content = [
     {
       icon: <IconMailForward className="h-8 w-8 text-secondary" />,
-      title: "Automated Patient Outreach",
-      description:
-        "Leads get texts, emails, and follow-ups within 60 seconds. No manual work. No missed opportunities. Just booked appointments.",
+      title: intl.formatMessage({ defaultMessage: "Automated Patient Outreach" }),
+      description: intl.formatMessage({ defaultMessage: "Leads get texts, emails, and follow-ups within 60 seconds. No manual work. No missed opportunities. Just booked appointments." }),
       content: (
         <ImageContainer>
           <BlurImage
@@ -37,9 +38,8 @@ export const Tools = () => {
     },
     {
       icon: <IconSocial className="h-8 w-8 text-secondary" />,
-      title: "Multi-Channel Ad Campaigns",
-      description:
-        "Facebook. Instagram. Google. We run your ads everywhere your ideal patients are scrolling. You never touch an ad manager.",
+      title: intl.formatMessage({ defaultMessage: "Multi-Channel Ad Campaigns" }),
+      description: intl.formatMessage({ defaultMessage: "Facebook. Instagram. Google. We run your ads everywhere your ideal patients are scrolling. You never touch an ad manager." }),
       content: (
         <ImageContainer>
           <BlurImage
@@ -54,9 +54,8 @@ export const Tools = () => {
     },
     {
       icon: <IconTerminal className="h-8 w-8 text-secondary" />,
-      title: "Done-For-You CRM",
-      description:
-        "Every lead tracked. Every follow-up logged. Every patient journey mapped. One dashboard. Zero guesswork.",
+      title: intl.formatMessage({ defaultMessage: "Done-For-You CRM" }),
+      description: intl.formatMessage({ defaultMessage: "Every lead tracked. Every follow-up logged. Every patient journey mapped. One dashboard. Zero guesswork." }),
       content: (
         <ImageContainer>
           <BlurImage
@@ -71,9 +70,8 @@ export const Tools = () => {
     },
     {
       icon: <IconTerminal className="h-8 w-8 text-secondary" />,
-      title: "Full-Stack Automation",
-      description:
-        "Booking confirmations, reminders, review requests, reactivation sequences. All automated. All done for you.",
+      title: intl.formatMessage({ defaultMessage: "Full-Stack Automation" }),
+      description: intl.formatMessage({ defaultMessage: "Booking confirmations, reminders, review requests, reactivation sequences. All automated. All done for you." }),
       content: (
         <ImageContainer>
           <BlurImage
@@ -133,10 +131,9 @@ export const Tools = () => {
       className="w-full relative h-full pt-20 md:pt-40"
     >
       <div className="px-4 md:px-6 max-w-4xl mx-auto text-center">
-        <Heading>Your entire patient acquisition engine</Heading>
+        <Heading>{intl.formatMessage({ defaultMessage: "Your entire patient acquisition engine" })}</Heading>
         <Subheading>
-          Every tool a functional or naturopathic practitioner needs to fill
-          their calendar. Built, managed, and optimized by us.
+          {intl.formatMessage({ defaultMessage: "Every tool a functional or naturopathic practitioner needs to fill their calendar. Built, managed, and optimized by us." })}
         </Subheading>
       </div>
       <StickyScroll content={content} />

@@ -1,29 +1,30 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
 import { Logo } from "@/components/logo";
+import { useIntl } from "react-intl";
 
 export const Footer = () => {
+  const intl = useIntl();
+
   const links = [
-    // {
-    //   name: "Blog",
-    //   href: "/blog",
-    // },
     {
-      name: "Contact",
+      name: intl.formatMessage({ defaultMessage: "Contact" }),
       href: "/contact",
     },
   ];
   const legal = [
     {
-      name: "Privacy Policy",
+      name: intl.formatMessage({ defaultMessage: "Privacy Policy" }),
       href: "/privacy-policy",
     },
     {
-      name: "Terms and Conditions",
+      name: intl.formatMessage({ defaultMessage: "Terms and Conditions" }),
       href: "/terms-and-conditions",
     },
     {
-      name: "Refund Policy",
+      name: intl.formatMessage({ defaultMessage: "Refund Policy" }),
       href: "#",
     },
   ];
@@ -49,8 +50,8 @@ export const Footer = () => {
             <div className="mr-4  md:flex mb-4">
               <Logo />
             </div>
-            <div>Copyright &copy; 2026 Dellep</div>
-            <div className="mt-2">All rights reserved</div>
+            <div>{intl.formatMessage({ defaultMessage: "Copyright \u00a9 2026 Dellep" })}</div>
+            <div className="mt-2">{intl.formatMessage({ defaultMessage: "All rights reserved" })}</div>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-10 items-start mt-6 sm:mt-10 md:mt-0">
             <div className="flex justify-center space-y-4 flex-col mt-4">

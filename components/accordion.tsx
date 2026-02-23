@@ -4,13 +4,24 @@ import React from "react";
 import { motion, AnimatePresence } from "motion/react";
 
 const Accordion = ({ i, expanded, setExpanded, title, description }: any) => {
-  const isOpen = i === expanded;
+  const isOpen = expanded instanceof Set ? expanded.has(i) : i === expanded;
+
+  const toggle = () => {
+    if (expanded instanceof Set) {
+      const next = new Set(expanded);
+      if (next.has(i)) next.delete(i);
+      else next.add(i);
+      setExpanded(next);
+    } else {
+      setExpanded(isOpen ? false : i);
+    }
+  };
 
   return (
     <div className="">
       <motion.div
         initial={false}
-        onClick={() => setExpanded(isOpen ? false : i)}
+        onClick={toggle}
         className="flex flex-col p-4 cursor-pointer text-base font-bold bg-neutral-100 dark:bg-neutral-900 text-neutral-900 dark:text-white rounded-xl relative overflow-hidden"
       >
         {title}

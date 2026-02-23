@@ -1,5 +1,6 @@
 import { AmbientColor } from "@/components/ambient-color";
 import { CTA } from "@/components/cta";
+import { CTABanner } from "@/components/cta-banner";
 import { FAQs } from "@/components/faqs";
 import { Hero } from "@/components/hero";
 import { TestimonialsCarousel } from "@/components/testimonials-carousel";
@@ -14,6 +15,7 @@ export default function Home() {
       <Tools />
       <TestimonialsCarousel />
       <FAQs />
+      <CTABanner />
       <CTA />
     </div>
   );

@@ -9,6 +9,7 @@ import { Grid } from "./features/grid";
 import { FeatureIconContainer } from "./features/feature-icon-container";
 import { IconMailFilled, IconCheck } from "@tabler/icons-react";
 import { submitContact } from "@/app/actions/submit-contact";
+import { useIntl } from "react-intl";
 
 export const ContactForm = () => {
   const [form, setForm] = useState({
@@ -19,6 +20,7 @@ export const ContactForm = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const intl = useIntl();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -47,22 +49,29 @@ export const ContactForm = () => {
             <IconMailFilled className="h-6 w-6 text-cyan-500" />
           </FeatureIconContainer>
         </div>
-        <Heading className="text-left">Let&apos;s talk growth</Heading>
+        <Heading className="text-left">
+          {intl.formatMessage({ defaultMessage: "Let's talk growth" })}
+        </Heading>
         <Subheading className="text-left text-neutral-400">
-          Ready to stop guessing and start growing? Reach out and we&apos;ll
-          show you exactly how we&apos;ll fill your practice with patients.
+          {intl.formatMessage({ defaultMessage: "Ready to stop guessing and start growing? Reach out and we'll show you exactly how we'll fill your practice with patients." })}
         </Subheading>
 
         <div className="text-sm mt-10">
-          <p className="text-sm text-neutral-700 dark:text-neutral-200">Email</p>
+          <p className="text-sm text-neutral-700 dark:text-neutral-200">
+            {intl.formatMessage({ defaultMessage: "Email" })}
+          </p>
           <p className="text-sm text-neutral-500 dark:text-neutral-400">contact@dellep.com</p>
         </div>
         <div className="text-sm mt-4">
-          <p className="text-sm text-neutral-700 dark:text-neutral-200">Phone</p>
+          <p className="text-sm text-neutral-700 dark:text-neutral-200">
+            {intl.formatMessage({ defaultMessage: "Phone" })}
+          </p>
           <p className="text-sm text-neutral-500 dark:text-neutral-400">+1 (800) 123 XX21</p>
         </div>
         <div className="text-sm mt-4">
-          <p className="text-sm text-neutral-700 dark:text-neutral-200">Support</p>
+          <p className="text-sm text-neutral-700 dark:text-neutral-200">
+            {intl.formatMessage({ defaultMessage: "Support" })}
+          </p>
           <p className="text-sm text-neutral-500 dark:text-neutral-400">support@dellep.com</p>
         </div>
       </div>
@@ -78,17 +87,17 @@ export const ContactForm = () => {
               <IconCheck className="w-6 h-6 text-green-500" />
             </div>
             <p className="text-lg font-medium text-neutral-900 dark:text-white">
-              Message sent!
+              {intl.formatMessage({ defaultMessage: "Message sent!" })}
             </p>
             <p className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">
-              We&apos;ll get back to you within 24 hours.
+              {intl.formatMessage({ defaultMessage: "We'll get back to you within 24 hours." })}
             </p>
             <button
               type="button"
               onClick={() => setIsSubmitted(false)}
               className="mt-4 text-sm text-secondary hover:underline"
             >
-              Send another message
+              {intl.formatMessage({ defaultMessage: "Send another message" })}
             </button>
           </div>
         ) : (
@@ -98,13 +107,13 @@ export const ContactForm = () => {
                 className="text-neutral-600 dark:text-neutral-300 text-sm font-medium mb-2 inline-block"
                 htmlFor="name"
               >
-                Full name
+                {intl.formatMessage({ defaultMessage: "Full name" })}
               </label>
               <input
                 id="name"
                 type="text"
                 required
-                placeholder="Dr. Jane Smith"
+                placeholder={intl.formatMessage({ defaultMessage: "Dr. Jane Smith" })}
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
                 className="h-10 pl-4 w-full rounded-md text-sm bg-white dark:bg-charcoal border border-neutral-200 dark:border-neutral-800 text-neutral-900 dark:text-white placeholder-neutral-500 outline-none focus:outline-none active:outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-800"
@@ -115,13 +124,13 @@ export const ContactForm = () => {
                 className="text-neutral-600 dark:text-neutral-300 text-sm font-medium mb-2 inline-block"
                 htmlFor="email"
               >
-                Email Address
+                {intl.formatMessage({ defaultMessage: "Email Address" })}
               </label>
               <input
                 id="email"
                 type="email"
                 required
-                placeholder="yourname@yourpractice.com"
+                placeholder={intl.formatMessage({ defaultMessage: "yourname@yourpractice.com" })}
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
                 className="h-10 pl-4 w-full rounded-md text-sm bg-white dark:bg-charcoal border border-neutral-200 dark:border-neutral-800 text-neutral-900 dark:text-white placeholder-neutral-500 outline-none focus:outline-none active:outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-800"
@@ -132,12 +141,12 @@ export const ContactForm = () => {
                 className="text-neutral-600 dark:text-neutral-300 text-sm font-medium mb-2 inline-block"
                 htmlFor="company"
               >
-                Practice Name
+                {intl.formatMessage({ defaultMessage: "Practice Name" })}
               </label>
               <input
                 id="company"
                 type="text"
-                placeholder="Your Practice Name"
+                placeholder={intl.formatMessage({ defaultMessage: "Your Practice Name" })}
                 value={form.company}
                 onChange={(e) => setForm({ ...form, company: e.target.value })}
                 className="h-10 pl-4 w-full rounded-md text-sm bg-white dark:bg-charcoal border border-neutral-200 dark:border-neutral-800 text-neutral-900 dark:text-white placeholder-neutral-500 outline-none focus:outline-none active:outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-800"
@@ -148,19 +157,21 @@ export const ContactForm = () => {
                 className="text-neutral-600 dark:text-neutral-300 text-sm font-medium mb-2 inline-block"
                 htmlFor="message"
               >
-                Message
+                {intl.formatMessage({ defaultMessage: "Message" })}
               </label>
               <textarea
                 id="message"
                 rows={5}
-                placeholder="Type your message here"
+                placeholder={intl.formatMessage({ defaultMessage: "Type your message here" })}
                 value={form.message}
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
                 className="pl-4 pt-4 w-full rounded-md text-sm bg-white dark:bg-charcoal border border-neutral-200 dark:border-neutral-800 text-neutral-900 dark:text-white placeholder-neutral-500 outline-none focus:outline-none active:outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-800"
               />
             </div>
             <Button variant="muted" type="submit" disabled={isSubmitting}>
-              {isSubmitting ? "Sending..." : "Submit"}
+              {isSubmitting
+                ? intl.formatMessage({ defaultMessage: "Sending..." })
+                : intl.formatMessage({ defaultMessage: "Submit" })}
             </Button>
           </>
         )}

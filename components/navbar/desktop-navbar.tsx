@@ -2,10 +2,12 @@
 import { Logo } from "@/components/logo";
 import { Button } from "../button";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { LanguageSwitcher } from "@/components/language-switcher";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
 import { useMotionValueEvent, useScroll } from "motion/react";
 import { Link } from "next-view-transitions";
+import { useIntl } from "react-intl";
 
 type Props = {
   navItems: {
@@ -18,6 +20,7 @@ type Props = {
 export const DesktopNavbar = ({ navItems }: Props) => {
   const { scrollY } = useScroll();
   const [scrolled, setScrolled] = useState(false);
+  const intl = useIntl();
 
   useMotionValueEvent(scrollY, "change", (value) => {
     setScrolled(value > 20);
@@ -35,7 +38,7 @@ export const DesktopNavbar = ({ navItems }: Props) => {
       {/* Left — Logo */}
       <Logo />
 
-      {/* Right — Contact + Book a call + Theme */}
+      {/* Right — Contact + Book a call + Theme + Language */}
       <div className="flex items-center gap-4">
         {navItems.map((item) => (
           <Link
@@ -46,8 +49,9 @@ export const DesktopNavbar = ({ navItems }: Props) => {
             {item.title}
           </Link>
         ))}
+        <LanguageSwitcher />
         <ThemeToggle />
-        <Button>Book a call</Button>
+        <Button>{intl.formatMessage({ defaultMessage: "Book a call" })}</Button>
       </div>
     </div>
   );

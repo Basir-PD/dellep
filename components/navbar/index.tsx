@@ -2,15 +2,18 @@
 import { DesktopNavbar } from "./desktop-navbar";
 import { MobileNavbar } from "./mobile-navbar";
 import { motion } from "motion/react";
-
-const navItems = [
-  {
-    title: "Contact",
-    link: "/contact",
-  },
-];
+import { useIntl } from "react-intl";
 
 export function NavBar() {
+  const intl = useIntl();
+
+  const navItems = [
+    {
+      title: intl.formatMessage({ defaultMessage: "Contact" }),
+      link: "/contact",
+    },
+  ];
+
   return (
     <motion.nav
       initial={{

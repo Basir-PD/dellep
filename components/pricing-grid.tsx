@@ -9,83 +9,86 @@ import Balancer from "react-wrap-balancer";
 import Beam from "./beam";
 import { Switch } from "./switch";
 import { Clients } from "./clients";
+import { useIntl } from "react-intl";
 
 export const PricingGrid = () => {
+  const intl = useIntl();
   const tiers = [
     {
-      title: "Starter",
-      description: "For solo practitioners exploring growth",
+      title: intl.formatMessage({ defaultMessage: "Starter" }),
+      description: intl.formatMessage({ defaultMessage: "For solo practitioners exploring growth" }),
       monthlyPrice: 0,
       yearlyPrice: 0,
       features: [
-        "Access to all tools for 14 days",
-        "No credit card required",
-        "Community Support",
-        "Access to all Dellep tools",
+        intl.formatMessage({ defaultMessage: "Access to all tools for 14 days" }),
+        intl.formatMessage({ defaultMessage: "No credit card required" }),
+        intl.formatMessage({ defaultMessage: "Community Support" }),
+        intl.formatMessage({ defaultMessage: "Access to all Dellep tools" }),
       ],
       onClick: () => {
         console.log("clicked");
       },
-      ctaText: "Get Started",
+      ctaText: intl.formatMessage({ defaultMessage: "Get Started" }),
     },
     {
-      title: "Growth",
-      description: "For practitioners ready to scale",
+      title: intl.formatMessage({ defaultMessage: "Growth" }),
+      description: intl.formatMessage({ defaultMessage: "For practitioners ready to scale" }),
       monthlyPrice: 20,
       yearlyPrice: 100,
       features: [
-        "Everything in Hobby +",
-        "Access to Dellep AI",
-        "Priority tools access",
-        "Slack and email support",
-        "Priority support",
-        "99.67% Uptime SLA",
-        "Access to all templates",
+        intl.formatMessage({ defaultMessage: "Everything in Hobby +" }),
+        intl.formatMessage({ defaultMessage: "Access to Dellep AI" }),
+        intl.formatMessage({ defaultMessage: "Priority tools access" }),
+        intl.formatMessage({ defaultMessage: "Slack and email support" }),
+        intl.formatMessage({ defaultMessage: "Priority support" }),
+        intl.formatMessage({ defaultMessage: "99.67% Uptime SLA" }),
+        intl.formatMessage({ defaultMessage: "Access to all templates" }),
       ],
       onClick: () => {
         console.log("clicked");
       },
-      ctaText: "Get Started",
+      ctaText: intl.formatMessage({ defaultMessage: "Get Started" }),
     },
     {
-      title: "Pro",
-      description: "For established clinics & multi-provider practices",
+      title: intl.formatMessage({ defaultMessage: "Pro" }),
+      description: intl.formatMessage({ defaultMessage: "For established clinics & multi-provider practices" }),
       monthlyPrice: 30,
       yearlyPrice: 150,
       features: [
-        "Everything in Starter + ",
-        "Access to our dev team",
-        "Coffee with the CEO",
-        "Access to all Dellep tools",
-        "Request tools",
-        "Advanced analytics",
-        "Customizable dashboards",
-        "24/7 customer support",
-        "Unlimited data storage",
-        "Enhanced security features",
+        intl.formatMessage({ defaultMessage: "Everything in Starter +" }),
+        intl.formatMessage({ defaultMessage: "Access to our dev team" }),
+        intl.formatMessage({ defaultMessage: "Coffee with the CEO" }),
+        intl.formatMessage({ defaultMessage: "Access to all Dellep tools" }),
+        intl.formatMessage({ defaultMessage: "Request tools" }),
+        intl.formatMessage({ defaultMessage: "Advanced analytics" }),
+        intl.formatMessage({ defaultMessage: "Customizable dashboards" }),
+        intl.formatMessage({ defaultMessage: "24/7 customer support" }),
+        intl.formatMessage({ defaultMessage: "Unlimited data storage" }),
+        intl.formatMessage({ defaultMessage: "Enhanced security features" }),
       ],
       featured: true,
       onClick: () => {
         console.log("clicked");
       },
-      ctaText: "Get Started",
+      ctaText: intl.formatMessage({ defaultMessage: "Get Started" }),
     },
     {
-      title: "Enterprise",
-      description: "For multi-location practices & clinic networks",
+      title: intl.formatMessage({ defaultMessage: "Enterprise" }),
+      description: intl.formatMessage({ defaultMessage: "For multi-location practices & clinic networks" }),
       monthlyPrice: 0,
       yearlyPrice: 0,
       features: [
-        "Everything in Pro + ",
-        "HIPAA and SOC2 compliance",
-        "Bulk email support",
-        "Customizable dashboards",
-        "24/7 customer support",
+        intl.formatMessage({ defaultMessage: "Everything in Pro +" }),
+        intl.formatMessage({ defaultMessage: "HIPAA and SOC2 compliance" }),
+        intl.formatMessage({ defaultMessage: "Bulk email support" }),
+        intl.formatMessage({ defaultMessage: "Customizable dashboards" }),
+        intl.formatMessage({ defaultMessage: "24/7 customer support" }),
       ],
       onClick: () => {
         console.log("clicked");
       },
-      ctaText: "Book a demo",
+      ctaText: intl.formatMessage({ defaultMessage: "Book a demo" }),
+      isEnterprise: true,
     },
   ];
   const [checked, setChecked] = useState(false);
@@ -108,10 +111,12 @@ export const PricingGrid = () => {
             <div>
               <h3 className="text-base font-normal">{tier.title}</h3>
               <p className="text-lg text-neutral-400 mt-4 font-medium">
-                {tier.title === "Enterprise"
-                  ? "Custom"
+                {"isEnterprise" in tier && tier.isEnterprise
+                  ? intl.formatMessage({ defaultMessage: "Custom" })
                   : `$${checked ? tier.yearlyPrice : tier.monthlyPrice} / ${
-                      checked ? "year" : "month"
+                      checked
+                        ? intl.formatMessage({ defaultMessage: "year" })
+                        : intl.formatMessage({ defaultMessage: "month" })
                     }`}
               </p>
               <p className="text-sm text-neutral-4000 mt-4">

@@ -11,7 +11,9 @@ import { Subheading } from "./subheading";
 import { VideoModal } from "./video-modal";
 import { FeaturedImages } from "./featured-images";
 import Beam from "./beam";
+import { useIntl } from "react-intl";
 export const Hero = () => {
+  const intl = useIntl();
   const router = useRouter();
 
   const containerRef = useRef<any>(null);
@@ -48,16 +50,14 @@ export const Hero = () => {
           as="h1"
           className="text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-bold max-w-5xl mx-auto text-center mt-6 relative z-10 py-4 md:py-6 tracking-tight leading-tight"
         >
-          10-20+ New Patients Every Month Or You Don&apos;t Pay
+          {intl.formatMessage({ defaultMessage: "10-20+ New Patients Every Month Or You Don't Pay" })}
         </Heading>
         <Subheading className="text-center mt-2 md:mt-6 text-sm sm:text-base md:text-xl text-neutral-500 dark:text-neutral-400 max-w-3xl mx-auto relative z-10 px-2">
-          We build done-for-you patient acquisition systems for functional
-          and naturopathic practitioners. No retainers. No guesswork. Just
-          patients on your calendar.
+          {intl.formatMessage({ defaultMessage: "We build done-for-you patient acquisition systems for functional and naturopathic practitioners. No retainers. No guesswork. Just patients on your calendar." })}
         </Subheading>
         <div className="flex items-center gap-4 justify-center my-6 md:my-10 relative z-10">
           <Button className="flex space-x-2 items-center group !text-base md:!text-lg">
-            <span>Book a free strategy call</span>{" "}
+            <span>{intl.formatMessage({ defaultMessage: "Book a free strategy call" })}</span>{" "}
             <HiArrowRight className="text-black group-hover:translate-x-1 stroke-[1px] h-3 w-3 mt-0.5 transition-transform duration-200" />
           </Button>
         </div>

@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { ViewTransitions } from "next-view-transitions";
 import type { Viewport } from "next";
 import { NavBar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider";
+import { IntlClientProvider } from "@/components/intl-provider";
 
 export const metadata: Metadata = {
   title: "Dellep | 10-20 New Patients Monthly for Functional & Naturopathic Practices",
@@ -21,12 +21,6 @@ export const viewport: Viewport = {
   ],
 };
 
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["400", "500", "600", "700", "800", "900"],
-});
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -37,15 +31,16 @@ export default function RootLayout({
       <html lang="en">
         <body
           className={cn(
-            inter.className,
-            "bg-white dark:bg-charcoal antialiased h-full w-full"
+            "font-sans bg-white dark:bg-charcoal antialiased h-full w-full"
           )}
         >
-          <ThemeProvider>
-            <NavBar />
-            {children}
-            <Footer />
-          </ThemeProvider>
+          <IntlClientProvider>
+            <ThemeProvider>
+              <NavBar />
+              {children}
+              <Footer />
+            </ThemeProvider>
+          </IntlClientProvider>
         </body>
       </html>
     </ViewTransitions>

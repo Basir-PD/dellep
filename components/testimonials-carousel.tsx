@@ -4,8 +4,10 @@ import { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { IconUserCircle } from "@tabler/icons-react";
 import { testimonials } from "@/constants/page-testimonials";
+import { useIntl } from "react-intl";
 
 export function TestimonialsCarousel() {
+  const intl = useIntl();
   const itemsPerPage = 3;
   const totalPages = Math.ceil(testimonials.length / itemsPerPage);
   const [currentPage, setCurrentPage] = useState(0);
@@ -27,11 +29,11 @@ export function TestimonialsCarousel() {
     <section>
       <div className="mx-auto max-w-7xl px-4 py-12 md:px-8 md:py-20">
         <p className="text-neutral-500 font-mono text-lg dark:text-neutral-400">
-          Testimonials
+          {intl.formatMessage({ defaultMessage: "Testimonials" })}
         </p>
         <div className="mt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <h2 className="text-xl sm:text-2xl font-medium tracking-tight text-black md:text-4xl lg:text-5xl dark:text-white leading-tight">
-            Practitioners who are growing.
+            {intl.formatMessage({ defaultMessage: "Practitioners who are growing." })}
           </h2>
           <div className="flex items-center gap-2 shrink-0">
             <button
