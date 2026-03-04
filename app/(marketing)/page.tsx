@@ -5,6 +5,7 @@ import { FAQs } from "@/components/faqs";
 import { Hero } from "@/components/hero";
 import { TestimonialsCarousel } from "@/components/testimonials-carousel";
 import { Tools } from "@/components/tools";
+import { EngineShowcase } from "@/components/engine-showcase";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <AmbientColor />
       <Hero />
       {/* <Features /> */}
+      <EngineShowcase />
       <Tools />
       <TestimonialsCarousel />
       <FAQs />
