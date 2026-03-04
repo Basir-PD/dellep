@@ -1,18 +1,6 @@
-"use client";
 import { Link } from "next-view-transitions";
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
 
 export const Logo = () => {
-  const { resolvedTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  const logoSrc = mounted && resolvedTheme === "light" ? "/logos/light-logo.png" : "/logos/dark-logo.png";
-
   return (
     <Link
       href="/"
@@ -20,7 +8,7 @@ export const Logo = () => {
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src={logoSrc}
+        src="/logo.png"
         alt="Dellep"
         className="h-10 md:h-20 w-auto"
       />

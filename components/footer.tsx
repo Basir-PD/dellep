@@ -112,7 +112,7 @@ export const Footer = () => {
               <Link href="/" className="block">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/logos/dark-logo.png"
+                  src="/logo.png"
                   alt="Dellep"
                   className="h-16 sm:h-20 md:h-28 lg:h-36 w-auto"
                 />
