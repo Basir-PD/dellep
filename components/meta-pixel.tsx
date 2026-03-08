@@ -7,7 +7,7 @@ export function MetaPixel() {
   useEffect(() => {
     const loadPixel = () => {
       if (localStorage.getItem("cookie-consent") !== "accepted") return;
-      if (window.fbq) return;
+      if (typeof window.fbq === "function") return;
 
       const f = window as any;
       const n = (f.fbq = function () {
