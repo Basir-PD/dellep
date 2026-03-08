@@ -9,8 +9,8 @@ export function MetaPixel() {
       if (localStorage.getItem("cookie-consent") !== "accepted") return;
       if (typeof window.fbq === "function") return;
 
-      /* eslint-disable @typescript-eslint/no-explicit-any */
-      const w = window as any;
+      // eslint-disable-next-line
+      const w: any = window;
       w.fbq = function () {
         w.fbq.callMethod
           ? w.fbq.callMethod.apply(w.fbq, arguments)
@@ -21,7 +21,6 @@ export function MetaPixel() {
       w.fbq.loaded = true;
       w.fbq.version = "2.0";
       w.fbq.queue = [];
-      /* eslint-enable @typescript-eslint/no-explicit-any */
 
       const s = document.createElement("script");
       s.async = true;
