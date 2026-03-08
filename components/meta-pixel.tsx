@@ -9,22 +9,24 @@ export function MetaPixel() {
       if (localStorage.getItem("cookie-consent") !== "accepted") return;
       if (typeof window.fbq === "function") return;
 
-      const f = window as any;
-      const n = (f.fbq = function () {
-        n.callMethod
-          ? n.callMethod.apply(n, arguments)
-          : n.queue.push(arguments);
-      });
-      f._fbq = n;
-      n.push = n;
-      n.loaded = true;
-      n.version = "2.0";
-      n.queue = [] as any[];
+      /* eslint-disable @typescript-eslint/no-explicit-any */
+      const w = window as any;
+      w.fbq = function () {
+        w.fbq.callMethod
+          ? w.fbq.callMethod.apply(w.fbq, arguments)
+          : w.fbq.queue.push(arguments);
+      };
+      w._fbq = w.fbq;
+      w.fbq.push = w.fbq;
+      w.fbq.loaded = true;
+      w.fbq.version = "2.0";
+      w.fbq.queue = [];
+      /* eslint-enable @typescript-eslint/no-explicit-any */
 
-      const t = document.createElement("script");
-      t.async = true;
-      t.src = "https://connect.facebook.net/en_US/fbevents.js";
-      document.head.appendChild(t);
+      const s = document.createElement("script");
+      s.async = true;
+      s.src = "https://connect.facebook.net/en_US/fbevents.js";
+      document.head.appendChild(s);
 
       window.fbq("init", FB_PIXEL_ID);
       window.fbq("track", "PageView");
