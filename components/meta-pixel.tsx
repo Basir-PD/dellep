@@ -27,8 +27,8 @@ export function MetaPixel() {
       s.src = "https://connect.facebook.net/en_US/fbevents.js";
       document.head.appendChild(s);
 
-      window.fbq("init", FB_PIXEL_ID);
-      window.fbq("track", "PageView");
+      w.fbq("init", FB_PIXEL_ID);
+      w.fbq("track", "PageView");
     };
 
     loadPixel();
