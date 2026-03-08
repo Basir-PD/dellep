@@ -98,9 +98,6 @@
   "5W5CLT": {
     "defaultMessage": "Get Started Today"
   },
-  "5Wwopw": {
-    "defaultMessage": "Pricing"
-  },
   "5i7sUj": {
     "defaultMessage": "This Site may include features such as bulletin boards, chat rooms, and email services which allow feedback and real-time interaction between users. You alone are responsible for the material you post or send."
   },
@@ -209,9 +206,6 @@
   "G9vWRx": {
     "defaultMessage": "I've been burned by agencies before. How are you different?"
   },
-  "GPkqYL": {
-    "defaultMessage": "Plans built for solo practitioners, growing clinics, and multi-location practices. Pick what fits your stage."
-  },
   "GybB0t": {
     "defaultMessage": "Facebook, Instagram, and Google. We go where your ideal patients are already spending their time. We test, optimize, and scale what works."
   },
@@ -235,9 +229,6 @@
   },
   "IoiTVB": {
     "defaultMessage": "For practitioners ready to scale"
-  },
-  "IrEAyo": {
-    "defaultMessage": "Simple, transparent pricing"
   },
   "JbpCYv": {
     "defaultMessage": "99.67% Uptime SLA"
@@ -455,6 +446,9 @@
   "gNTClu": {
     "defaultMessage": "Starter"
   },
+  "ghzkev": {
+    "defaultMessage": "We use cookies to measure site performance and improve your experience."
+  },
   "gwcdac": {
     "defaultMessage": "You are responsible for maintaining the confidentiality of your password and account, and are responsible for all activities that occur under your password or account."
   },
@@ -509,6 +503,9 @@
   "pj/aqw": {
     "defaultMessage": "Do I need to rebuild my website or start from scratch?"
   },
+  "pvtgR2": {
+    "defaultMessage": "Decline"
+  },
   "qO+grg": {
     "defaultMessage": "Transaction Data — details about payments to and from you and details of services you have purchased from us."
   },
@@ -532,6 +529,9 @@
   },
   "s9/hMN": {
     "defaultMessage": "Some of our third-party service providers are based outside of Canada, which means that the processing of your personal data may involve a transfer of data outside of Canada."
+  },
+  "sjzLbX": {
+    "defaultMessage": "Accept"
   },
   "ss3d3H": {
     "defaultMessage": "The information, products, and services offered on or through the Site are provided \"as is\" and without warranties of any kind either express or implied. To the fullest extent permissible pursuant to applicable law, we disclaim all warranties, express or implied, including, but not limited to, implied warranties of merchantability and fitness for a particular purpose."
