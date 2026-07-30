@@ -1,36 +1,27 @@
 "use client";
 import { cn } from "@/lib/utils";
-import { Link } from "next-view-transitions";
 import { useState } from "react";
-import { IoIosMenu } from "react-icons/io";
-import { IoIosClose } from "react-icons/io";
 import { Button } from "@/components/button";
 import { Logo } from "@/components/logo";
-import { ThemeToggle } from "@/components/theme-toggle";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { useMotionValueEvent, useScroll } from "motion/react";
 import { useIntl } from "react-intl";
 
-export const MobileNavbar = ({ navItems }: any) => {
-  const [open, setOpen] = useState(false);
+// No hamburger: there is one page and one action, so a menu would hide the
+// only thing worth tapping.
+export const MobileNavbar = () => {
   const intl = useIntl();
-
   const { scrollY } = useScroll();
-
   const [showBackground, setShowBackground] = useState(false);
 
   useMotionValueEvent(scrollY, "change", (value) => {
-    if (value > 100) {
-      setShowBackground(true);
-    } else {
-      setShowBackground(false);
-    }
+    setShowBackground(value > 100);
   });
 
   return (
     <div
       className={cn(
-        "flex justify-between bg-transparent items-center w-full h-14 px-4 transition-all duration-300 border-b border-neutral-200 dark:border-neutral-800",
+        "flex justify-between items-center w-full h-14 px-4 transition-all duration-300 border-b border-neutral-200 dark:border-neutral-800",
         showBackground
           ? "bg-white/70 dark:bg-neutral-950/70 backdrop-blur-xl shadow-sm"
           : "bg-white dark:bg-charcoal"
@@ -39,43 +30,10 @@ export const MobileNavbar = ({ navItems }: any) => {
       <Logo />
       <div className="flex items-center gap-3">
         <LanguageSwitcher />
-        <ThemeToggle />
-        <IoIosMenu
-          className="text-neutral-900 dark:text-white h-6 w-6 cursor-pointer"
-          onClick={() => setOpen(!open)}
-        />
+        <Button as="a" href="#intake" className="px-4 py-2.5">
+          {intl.formatMessage({ defaultMessage: "Book a call" })}
+        </Button>
       </div>
-      {open && (
-        <div className="fixed inset-0 bg-white dark:bg-black z-50 flex flex-col pt-safe">
-          <div className="flex items-center justify-between w-full px-4 py-3 border-b border-neutral-200 dark:border-neutral-800">
-            <Logo />
-            <IoIosClose
-              className="h-8 w-8 text-neutral-900 dark:text-white cursor-pointer"
-              onClick={() => setOpen(false)}
-            />
-          </div>
-          <div className="flex flex-col gap-2 px-4 pt-8">
-            {navItems.map((navItem: any, idx: number) => (
-              <Link
-                key={`link-${idx}`}
-                href={navItem.link}
-                onClick={() => setOpen(false)}
-                className="block py-3 px-2 text-lg font-medium text-neutral-900 dark:text-white border-b border-neutral-100 dark:border-neutral-800"
-              >
-                {navItem.title}
-              </Link>
-            ))}
-          </div>
-          <div className="px-4 pt-8">
-            <Button
-              className="w-full justify-center"
-              onClick={() => setOpen(false)}
-            >
-              {intl.formatMessage({ defaultMessage: "Book a call" })}
-            </Button>
-          </div>
-        </div>
-      )}
     </div>
   );
 };

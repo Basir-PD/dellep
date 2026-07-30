@@ -1,24 +1,21 @@
 import { AmbientColor } from "@/components/ambient-color";
-import { CTA } from "@/components/cta";
-import { CTABanner } from "@/components/cta-banner";
-import { FAQs } from "@/components/faqs";
 import { Hero } from "@/components/hero";
-import { TestimonialsCarousel } from "@/components/testimonials-carousel";
-import { Tools } from "@/components/tools";
-import { EngineShowcase } from "@/components/engine-showcase";
+import { OfferTerms } from "@/components/offer-terms";
+import { ThirtyDayPlan } from "@/components/thirty-day-plan";
+import { WhyFree } from "@/components/why-free";
+import { Intake } from "@/components/intake";
 
 export default function Home() {
   return (
     <div className="relative overflow-hidden">
       <AmbientColor />
       <Hero />
-      {/* <Features /> */}
-      <EngineShowcase />
-      <Tools />
-      <TestimonialsCarousel />
-      <FAQs />
-      <CTABanner />
-      <CTA />
+      <OfferTerms />
+      <ThirtyDayPlan />
+      <WhyFree />
+      <section id="intake" className="scroll-mt-20">
+        <Intake />
+      </section>
     </div>
   );
 }

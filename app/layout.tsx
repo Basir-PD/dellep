@@ -10,9 +10,9 @@ import { IntlClientProvider } from "@/components/intl-provider";
 import { CookieConsent } from "@/components/cookie-consent";
 import { MetaPixel } from "@/components/meta-pixel";
 export const metadata: Metadata = {
-  title: "Dellep | 10-20 New Patients Monthly for Functional & Naturopathic Practices",
+  title: "Dellep — Meta ads for roofing companies",
   description:
-    "We help functional and naturopathic practitioners get 10-20 new patients every month using done-for-you marketing systems. If we don't deliver, you don't pay.",
+    "I run Meta ads for roofing companies in the US and Quebec. Free 30-day pilot: you pay Meta for your own ads, you pay me nothing, and you keep your ad account.",
 };
 
 export const viewport: Viewport = {

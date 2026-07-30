@@ -53,7 +53,7 @@ export default function PrivacyPolicyPage() {
             <p>{intl.formatMessage({ defaultMessage: "Personal data means any information about an individual from which that person can be identified. We may collect, use, store, and transfer different kinds of personal data about you, which we have grouped together as follows:" })}</p>
             <ul>
               <li><strong>{intl.formatMessage({ defaultMessage: "Identity Data — first name, last name, username or similar identifier, and title." })}</strong></li>
-              <li><strong>{intl.formatMessage({ defaultMessage: "Contact Data — email address, telephone number, practice name, and mailing address." })}</strong></li>
+              <li><strong>{intl.formatMessage({ defaultMessage: "Contact Data — email address, telephone number, company name, and mailing address." })}</strong></li>
               <li><strong>{intl.formatMessage({ defaultMessage: "Financial Data — bank account and payment card details (if applicable)." })}</strong></li>
               <li><strong>{intl.formatMessage({ defaultMessage: "Transaction Data — details about payments to and from you and details of services you have purchased from us." })}</strong></li>
               <li><strong>{intl.formatMessage({ defaultMessage: "Technical Data — internet protocol (IP) address, browser type and version, time zone setting and location, browser plug-in types and versions, operating system and platform, device ID, and other technology on the devices you use to access this website." })}</strong></li>

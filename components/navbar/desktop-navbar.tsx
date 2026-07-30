@@ -1,23 +1,14 @@
 "use client";
 import { Logo } from "@/components/logo";
 import { Button } from "../button";
-import { ThemeToggle } from "@/components/theme-toggle";
 import { LanguageSwitcher } from "@/components/language-switcher";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
 import { useMotionValueEvent, useScroll } from "motion/react";
-import { Link } from "next-view-transitions";
 import { useIntl } from "react-intl";
 
-type Props = {
-  navItems: {
-    link: string;
-    title: string;
-    target?: "_blank";
-  }[];
-};
-
-export const DesktopNavbar = ({ navItems }: Props) => {
+export const DesktopNavbar = () => {
   const { scrollY } = useScroll();
   const [scrolled, setScrolled] = useState(false);
   const intl = useIntl();
@@ -35,23 +26,14 @@ export const DesktopNavbar = ({ navItems }: Props) => {
           : "bg-white dark:bg-charcoal"
       )}
     >
-      {/* Left — Logo */}
       <Logo />
 
-      {/* Right — Contact + Book a call + Theme + Language */}
       <div className="flex items-center gap-4">
-        {navItems.map((item) => (
-          <Link
-            key={item.title}
-            href={item.link}
-            className="text-sm text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors"
-          >
-            {item.title}
-          </Link>
-        ))}
         <LanguageSwitcher />
         <ThemeToggle />
-        <Button>{intl.formatMessage({ defaultMessage: "Book a call" })}</Button>
+        <Button as="a" href="#intake">
+          {intl.formatMessage({ defaultMessage: "See if we're a fit" })}
+        </Button>
       </div>
     </div>
   );
